@@ -1,0 +1,5 @@
+{
+    "fileUris": [ "https://github.com/SpektraSystems/Start-your-first-Linux-Virtual-Machine-on-Azure/blob/master/installserver.sh", "https://github.com/SpektraSystems/Start-your-first-Linux-Virtual-Machine-on-Azure/blob/master/workerserver.py" ],
+   
+    "commandToExecute": "bash installserver.sh"
+    }

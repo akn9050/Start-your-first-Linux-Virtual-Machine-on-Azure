@@ -24,7 +24,7 @@
 ``
 <img src="images/vmname.png"/><br/>
 4. Under **Administrator account** select **SSH Public Key** for authentication type. Provide **User Name** and paste your **Public key**.<br/>
-<img src="images/adminp.png"/><br/>
+<img src="images/sshselcet.png"/><br/>
 5. Under **Inbound port** rules > Public inbound ports, choose **Allow selected ports** and then select **SSH (22)** from the drop-down.<br/>
 <img src="images/portssh.png"/><br/>
 6. Leave the remaining options defaults and then select the **Review + create** button at the bottom of the page.<br/>

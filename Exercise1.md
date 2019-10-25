@@ -49,7 +49,9 @@ ssh azureuser@x.x.x.x
 gnome-session-quit
 ``<br/>
 ### 2.5 Reset Password of Virtual Machine
-1.
+1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>
+<img src="images/reset.png "/><br/>
+
 ### 2.6 Access Serial Console of Virtual Machine
 
 1. For using serial console of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Serial Console**.<br/>

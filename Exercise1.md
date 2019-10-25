@@ -32,3 +32,26 @@
 <img src="images/validation.png"/> <br/>     
 8. After sometime you can see that your virtual machine successfully deployed.<br/>
 <img src="images/overview.png"/><br>
+
+### 1.3 SSH to VM using Public IP
+
+1. Run below command to take **SSH** of your virtual machine.<br/>
+  * x.x.x.x :- Replace this with your virtual machine **Public IP**.<br/>
+``
+ssh azureuser@x.x.x.x
+``<br/>
+### 2.4 Perform Basic Operation Inside Virtual Machine
+
+1. Run the following commands for the basic operations:<br/>
+<img src="images/task.png"/><br/>
+2.Run this command to logout from ubuntu machine<br/>
+``
+gnome-session-quit
+``<br/>
+### 2.5 Reset Password of Virtual Machine
+1.
+### 2.6 Access Serial Console of Virtual Machine
+
+1. For using serial console of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Serial Console**.<br/>
+<img src="images/serialconsole.png "/><br/>
+2. By selecting power botton you can Restrat or Rest the VM.

@@ -50,10 +50,10 @@ There is a bonus section to this lab where you can try this for yourself.
 
 **Autoscale via the deployed web application**
 
-1. Go back to the Overview section for your scale set.<br/>
-2. Copy the public IP address, and navigate to <ip-address>:9000 in your browser.<br/>
+1. Go back to the **Overview** section for your scale set.<br/>
+2. Copy the **Public IP address**, and navigate to <ip-address>:9000 in your browser.<br/>
   •	You will see a landing page that looks like:<br/>
-3. To view the autoscale in action, simply click “Start work” on the page.<br/>
+3. To view the autoscale in action, simply click **Start work** on the page.<br/>
 4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once CPU > 60%, a new scale set instance will automatically be created.<br/>
 5. Go to Instances and watch VMs get created.
 6. You can also SSH into your individual instance by running below command in Cloud shell:-<br/>
@@ -61,6 +61,7 @@ There is a bonus section to this lab where you can try this for yourself.
  ``
  ssh <adminusername>@<ip-address> -p 50000
  ``
+ 
 **Autoscale manually in the Azure Portal based on date/time**
 
 1. Go back to the **Portal** and go to **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)

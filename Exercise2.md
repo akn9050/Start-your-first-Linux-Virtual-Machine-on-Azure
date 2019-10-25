@@ -29,7 +29,7 @@ az group deployment create -g <resource group name> -n <deployment name> --templ
 ``
 (Now, wait for the deployment to finish.)<br/>
 
-**Familiarizing yourself with your VM scale set (5 minutes)**
+**3.3 Familiarizing yourself with your VM scale set (5 minutes)**
 
 1. Go to the **Azure Portal**, navigate to your **Resource group**, and click on your newly-created VMSS.<br/>
 2. Go to **Instances**. Note that you only have one – this was defined by the template.<br/>
@@ -45,7 +45,7 @@ az group deployment create -g <resource group name> -n <deployment name> --templ
 Note that none of these were configured initially in your VM scale set, so you will need to upgrade the scale set model and then update individual instances to use them.<br/>
 There is a bonus section to this lab where you can try this for yourself.
 
-**Use autoscale rules on your VM scale set (25 minutes)**
+**3.4 Use autoscale rules on your VM scale set (25 minutes)**
 1. Go to **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.<br/>
 2. The VMSS will scale automatically based on load as measured by % CPU usage.<br/>
 <img src="images/2.png"/><br/>
@@ -80,7 +80,7 @@ There is a bonus section to this lab where you can try this for yourself.
 - **End date**: today, November 15, 2019, and a time several minutes in the future<br/>
 <img src="images/5.png"/><br/>
 
-**Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
+**3.5 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
 
 1. For add a password to your VMSS goto the **Reset Password**.<br/>
 2. Enter **Username** and **Password**.<br/>

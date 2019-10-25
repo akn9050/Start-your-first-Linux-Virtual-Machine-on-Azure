@@ -1,6 +1,18 @@
 # Exercise 1: Create your first Linux VM
 
-**1.1 Create Ubuntu VM from Azure Portal**
+**1.1 SSH Key Genration**
+1. Select the **Cloud Shell** from the upper right corner of the Azure Portal.<br/>
+<img src="images/azureclisign.png"/><br/>
+2. Select **BASH** in cloud shell window.<br/>
+3. Select **Show Advance Setting**.<br/>
+4. Create a storage accounr for Bash, provide unique name for **Storage Account**, **File share** and then click on **Create Storage**.<br/>
+<img src="images/bashst.png"/><br/>
+5. Type **ssh-keygen -t rsa -b 2048** to create the ssh key.<br/>
+6. You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location, listed in brackets.<br/>
+7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.<br/>
+8. To display public key type **run  cat ~/.ssh/id_rsa.pub**. Copy the content of public key for further step.<br/>
+
+**1.2 Create Ubuntu VM from Azure Portal**
 
 1. Click on **Create a resource** in the upper left corner of the Azure portal and select **Ubuntu Server 18.04 LTS**.<br/>
 <img src="images/ubuntunew.png"/><br/>
@@ -11,7 +23,7 @@
 "Standard_DS2_v2", "Standard_DS1_v2", "Standard_B1ls1", "Standard_B1s", "Standard_B1ms", "Standard_B2s", "Standard_B2ms", "Standard_B4ms", "Standard_B8ms", "Standard_E16-4s_v3", "Standard_E2s_v3", "Standard_E4-2s_v3", "Standard_E4s_v3", "Standard_E8-2s_v3", "Standard_E8-4s_v3", "E16-4s_v3", "E16-8s_v3".
 ``
 <img src="images/vmname.png"/><br/>
-4. Under **Administrator account** select **Password** for authentication type. Provide **User Name** and **Password**.<br/>
+4. Under **Administrator account** select **SSH Public Key** for authentication type. Provide **User Name** and paste your **Public key**.<br/>
 <img src="images/adminp.png"/><br/>
 5. Under **Inbound port** rules > Public inbound ports, choose **Allow selected ports** and then select **SSH (22)** from the drop-down.<br/>
 <img src="images/portssh.png"/><br/>

@@ -33,6 +33,7 @@ az group deployment create -g <resource group name> -n <deployment name> --templ
 
 1. Go to the **Azure Portal**, navigate to your **Resource group**, and click on your newly-created VMSS.<br/>
 2. Go to **Instances**. Note that you only have one – this was defined by the template.<br/>
+<img src="images/1.png"/><br/>
 3. Go to individual instance. Here you can view details for your individual VMSS instance - you can restart, deallocate, reimage, or upgrade instance.<br/>
 
 **Note: What is upgrading?**
@@ -47,6 +48,7 @@ There is a bonus section to this lab where you can try this for yourself.
 **Use autoscale rules on your VM scale set (25 minutes)**
 1. Go to **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.<br/>
 2. The VMSS will scale automatically based on load as measured by % CPU usage.<br/>
+<img src="images/2.png"/><br/>
 
 **Autoscale via the deployed web application**
 
@@ -55,6 +57,7 @@ There is a bonus section to this lab where you can try this for yourself.
   •	You will see a landing page that looks like:<br/>
 3. To view the autoscale in action, simply click **Start work** on the page.<br/>
 4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once **CPU > 60%**, a new scale set instance will automatically be created.<br/>
+<img src="images/3.png"/><br/>
 5. Go to **Instances** and watch VMs get created.
 6. You can also **SSH** into your individual instance by running below command in Cloud shell:-<br/>
   
@@ -66,6 +69,7 @@ There is a bonus section to this lab where you can try this for yourself.
 
 1. Go back to the **Portal** and go to **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
 2. Click **Custom Autoscale**, and note all the options you have.<br/>
+<img src="images/4.png"/><br/>
 3. Leave the auto created scale condition with the **Default Settings**.<br/>
 4. Click on **Add a scale set condition**.<br/>
 - Select **Sale to a specific instance count**.<br/>
@@ -74,6 +78,7 @@ There is a bonus section to this lab where you can try this for yourself.
 - **Timezone**: (UTC-05:00) Eastern Time (US & Canada).<br/>
 - **Start date**: today, November 15, 2019, and a time a minute or two in the future<br/>
 - **End date**: today, November 15, 2019, and a time several minutes in the future<br/>
+<img src="images/5.png"/><br/>
 
 **Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
 

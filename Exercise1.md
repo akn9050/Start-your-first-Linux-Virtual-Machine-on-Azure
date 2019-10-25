@@ -1,4 +1,4 @@
-# Exercise 1: Create your first Linux VM
+# Exercise 1: Create your first Linux VM (10 minutes)
 
 **1.1 SSH Key Genration**
 1. Select the **Cloud Shell** from the upper right corner of the Azure Portal.<br/>

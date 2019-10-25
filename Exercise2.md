@@ -11,7 +11,7 @@
 3. Use your existing bash storage account which we provisioned in **Exercise 1**.<br/>
 #### 3.2 Create a Scale Set
 
-1. Select cloud shell and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>
+1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>
 ``
 wget https://github.com/asinn826/Ignite2019VMSS-HOL
 ``
@@ -19,11 +19,11 @@ wget https://github.com/asinn826/Ignite2019VMSS-HOL
 ``
 cd Ignite2019VMSS-HOL
 ``
-3. Create new Resource Group for Virtual machine Sacle Set deployment using below command:-
+3. Create new **Resource Group** for Virtual machine Sacle Set deployment using below command:-
 ``
 az group create --name <resource group name> --location <location – you can use westus>
 ``
-4. Now, create the deployment by using your new resource group!<br/>
+4. Now, create the deployment by using your new **Resource group**.<br/>
 ``
 az group deployment create -g <resource group name> -n <deployment name> --template-file azuredeploy.json –parameters @azuredeploy.parameters.json 
 ``
@@ -31,8 +31,8 @@ az group deployment create -g <resource group name> -n <deployment name> --templ
 
 **Familiarizing yourself with your VM scale set (5 minutes)**
 
-1. Go to the Azure Portal, navigate to your resource group, and click on your newly-created VMSS.<br/>
-2. Go to Instances. Note that you only have one – this was defined by the template.<br/>
+1. Go to the **Azure Portal**, navigate to your **Resource group**, and click on your newly-created VMSS.<br/>
+2. Go to **Instances**. Note that you only have one – this was defined by the template.<br/>
 3. Go to individual instance. Here you can view details for your individual VMSS instance - you can restart, deallocate, reimage, or upgrade instance.<br/>
 
 **Note: What is upgrading?**
@@ -45,18 +45,18 @@ Note that none of these were configured initially in your VM scale set, so you w
 There is a bonus section to this lab where you can try this for yourself.
 
 **Use autoscale rules on your VM scale set (25 minutes)**
-1. Go to Scaling in the VMSS. Currently, the VMSS is set to automatic scaling.<br/>
+1. Go to **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.<br/>
 2. The VMSS will scale automatically based on load as measured by % CPU usage.<br/>
 
 **Autoscale via the deployed web application**
 
 1. Go back to the **Overview** section for your scale set.<br/>
-2. Copy the **Public IP address**, and navigate to <ip-address>:9000 in your browser.<br/>
+2. Copy the **Public IP address**, and navigate to **<ip-address>:9000** in your browser.<br/>
   •	You will see a landing page that looks like:<br/>
 3. To view the autoscale in action, simply click **Start work** on the page.<br/>
-4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once CPU > 60%, a new scale set instance will automatically be created.<br/>
-5. Go to Instances and watch VMs get created.
-6. You can also SSH into your individual instance by running below command in Cloud shell:-<br/>
+4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once **CPU > 60%**, a new scale set instance will automatically be created.<br/>
+5. Go to **Instances** and watch VMs get created.
+6. You can also **SSH** into your individual instance by running below command in Cloud shell:-<br/>
   
  ``
  ssh <adminusername>@<ip-address> -p 50000

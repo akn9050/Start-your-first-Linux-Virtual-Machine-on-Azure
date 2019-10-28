@@ -19,12 +19,13 @@
 2. To dispaly repo content use below command:-<br/>
 ``cd Ignite2019VMSS-HOL
 ``
+
 3. Edit your **azuredeploy.parameters.json**. <br/>
 - vmssNmae:- Give unipe name for vmss.<br/>
 - adminSshKey:- Paste your **Public key**.<br/>
 
 <img src="images/editprameter.png"/><br/>
-3. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.<br/>
+4. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.<br/>
 ``az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
 ``
 

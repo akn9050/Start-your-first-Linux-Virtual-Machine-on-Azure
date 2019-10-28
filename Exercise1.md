@@ -39,8 +39,7 @@
 
 1. Run below command to take **SSH** of your virtual machine.<br/>
   * x.x.x.x :- Replace this with your virtual machine **Public IP**.<br/>
-``
-ssh azureuser@x.x.x.x
+``ssh azureuser@x.x.x.x
 ``
 
 ### 2.4 Perform Basic Operation Inside Virtual Machine

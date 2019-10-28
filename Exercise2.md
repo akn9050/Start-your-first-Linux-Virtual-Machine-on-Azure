@@ -8,6 +8,7 @@
 <img src="images/azureclisign.png"/><br/>
 2. Select **BASH** from drop down in cloud shell window.<br/>
 3. Use your existing bash storage account which we provisioned in **Exercise 1**.<br/>
+
 #### 2.2 Create a Scale Set
 
 1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>

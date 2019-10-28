@@ -17,8 +17,7 @@
 <img src="images/1.png"/><br/>
 2. To dispaly repo content use below command:-<br/>
 ``
-cd Ignite2019VMSS-HOL<br/>
-ls
+cd Ignite2019VMSS-HOL
 ``
 
 <img src="images/1.png"/><br/>

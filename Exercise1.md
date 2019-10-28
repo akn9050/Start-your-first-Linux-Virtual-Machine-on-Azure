@@ -12,7 +12,7 @@
 <img src="images/sshkeygen.png"/><br/>
 6. You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location, listed in brackets.<br/>
 7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.<br/>
-8. To display public key run **cat /home/odl_user/your public key name**. Copy the content of public key for further step.<br/>
+8. To display public key run **cat /home/odl_user/public(your public key name)**. Copy the content of public key for further step.<br/>
 
 **1.2 Create Ubuntu VM from Azure Portal**
 

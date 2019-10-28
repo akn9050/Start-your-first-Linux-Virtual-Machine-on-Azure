@@ -1,7 +1,6 @@
 # Exercise 3: Deploy VM Scale Set (15 minutes)
 
-•	A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale.<br/>
-•	We have used the portal to create a VM, so let's use the Azure CLI to deploy a VMSS and an app to it.<br/>
+•	A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. We have used the portal to create a VM, so let's use the Azure CLI to deploy a VMSS and an app to it.<br/>
 
 #### 3.1 Launch Cloud Shell
 
@@ -13,19 +12,16 @@
 
 1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>
 ``
-wget https://github.com/asinn826/Ignite2019VMSS-HOL
+git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 ``
 2. To dispaly repo content use below command:-<br/>
 ``
 cd Ignite2019VMSS-HOL
 ``
-3. Create new **Resource Group** for Virtual machine Sacle Set deployment using below command:-
+
+3. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.<br/>
 ``
-az group create --name <resource group name> --location <location – you can use westus>
-``
-4. Now, create the deployment by using your new **Resource group**.<br/>
-``
-az group deployment create -g <resource group name> -n <deployment name> --template-file azuredeploy.json –parameters @azuredeploy.parameters.json 
+az group deployment create -g <resource group name> -n <deployment name> --template-file azuredeploy.json -–parameters azuredeploy.parameters.json 
 ``
 (Now, wait for the deployment to finish.)<br/>
 

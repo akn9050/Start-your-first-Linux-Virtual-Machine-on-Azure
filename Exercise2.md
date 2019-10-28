@@ -76,7 +76,7 @@ There is a bonus section to this lab where you can try this for yourself.<br/>
 6. You can also **SSH** into your individual instance by running below command in Cloud shell:-<br/>
   
  ``
- ssh -i <private key name><adminusername>@<ip-address> -p 50000
+ ssh -i <private key name> <adminusername>@<ip-address> -p 50000
  ``
  
 **Autoscale manually in the Azure Portal based on date/time**

@@ -20,8 +20,9 @@ cd Ignite2019VMSS-HOL
 ``
 
 3. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.<br/>
+
 ``
-az group deployment create -g <resource group name> -n <deployment name> --template-file azuredeploy.json -–parameters azuredeploy.parameters.json 
+az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
 ``
 (Now, wait for the deployment to finish.)<br/>
 

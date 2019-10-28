@@ -15,10 +15,6 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Start-your-first-Linux-Virtual-Machine-on-Azure/master/Exercise2.md",
         "Order": 3
-      },
-      {
-        "RawFilePath": "https://raw.githubusercontent.com/SpektraSystems/Start-your-first-Linux-Virtual-Machine-on-Azure/master/Exercise3.md",
-        "Order": 4
       }
     ]
   }

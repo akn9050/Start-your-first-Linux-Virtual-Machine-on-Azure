@@ -9,9 +9,10 @@
 4. Create a storage accounr for Bash, provide unique name for **Storage Account**, **File share** and then click on **Create Storage**.<br/>
 <img src="images/bashst.png"/><br/>
 5. Type **ssh-keygen -t rsa -b 2048** to create the ssh key.<br/>
+<img src="images/sshgen.png"/><br/>
 6. You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location, listed in brackets.<br/>
 7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.<br/>
-8. To display public key type **run  cat ~/.ssh/id_rsa.pub**. Copy the content of public key for further step.<br/>
+8. To display public key run **cat /home/odl_user/your public key name**. Copy the content of public key for further step.<br/>
 
 **1.2 Create Ubuntu VM from Azure Portal**
 

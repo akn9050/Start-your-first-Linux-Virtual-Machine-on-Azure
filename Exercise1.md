@@ -61,4 +61,4 @@
 
 1. For using serial console of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Serial Console**.<br/>
 <img src="images/serialconsole.png "/><br/>
-2. By selecting power botton you can Restrat or Rest the VM.
+2. Select power botton to **Restrat** or **Rest** the virtual machine.

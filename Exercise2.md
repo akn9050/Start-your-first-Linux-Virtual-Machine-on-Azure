@@ -15,7 +15,7 @@
 ``git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 ``
 
-<img src="images/github .png"/><br/>
+<img src="images/github.png"/><br/>
 2. To dispaly repo content use below command:-<br/>
 ``cd Ignite2019VMSS-HOL
 ``
@@ -77,6 +77,8 @@ There is a bonus section to this lab where you can try this for yourself.<br/>
  ssh -i <private key name> <adminusername>@<ip-address> -p 50000
  ``
  
+ <img src="images/ssh.png"/><br/>
+
 **Autoscale manually in the Azure Portal based on date/time**
 
 1. Go back to the **Portal** and go to **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)

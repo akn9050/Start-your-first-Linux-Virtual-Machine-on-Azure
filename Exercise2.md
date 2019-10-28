@@ -11,8 +11,7 @@
 #### 3.2 Create a Scale Set
 
 1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>
-``
-git clone https://github.com/asinn826/Ignite2019VMSS-HOL
+``git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 ``
 <img src="images/1.png"/><br/>
 2. To dispaly repo content use below command:-<br/>
@@ -67,7 +66,7 @@ There is a bonus section to this lab where you can try this for yourself.<br/>
 1. Go back to the **Overview** section for your scale set.<br/>
 2. Copy the **Public IP address**, and navigate to **<ip-address>:9000** in your browser.<br/>
   •	You will see a landing page that looks like:<br/>
-  <img src="images/2.png"/><br/>
+  <img src="images/2.png"/> <br/>
 3. To view the autoscale in action, simply click **Start work** on the page.<br/>
 4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once **CPU > 60%**, a new scale set instance will automatically be created.<br/>
 <img src="images/3.png"/><br/>

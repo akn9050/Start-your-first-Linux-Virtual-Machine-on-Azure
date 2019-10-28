@@ -13,6 +13,7 @@
 1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>
 ``git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 ``
+
 <img src="images/1.png"/><br/>
 2. To dispaly repo content use below command:-<br/>
 ``

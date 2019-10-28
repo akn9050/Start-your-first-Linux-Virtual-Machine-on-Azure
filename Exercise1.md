@@ -53,11 +53,11 @@
 
 <img src="images/logout.png "/><br/>
 
-### 2.5 Reset Password of Virtual Machine
+### 1.4 Reset Password of Virtual Machine
 1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>
 <img src="images/resetp.png "/><br/>
 
-### 2.6 Access Serial Console of Virtual Machine
+### 1.5 Access Serial Console of Virtual Machine
 
 1. For using serial console of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Serial Console**.<br/>
 <img src="images/serialconsole.png "/><br/>

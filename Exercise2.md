@@ -15,17 +15,17 @@
 ``git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 ``
 
-<img src="images/1.png"/><br/>
+<img src="images/github .png"/><br/>
 2. To dispaly repo content use below command:-<br/>
 ``cd Ignite2019VMSS-HOL
 ``
 
-<img src="images/1.png"/><br/>
+<img src="images/gitcontent.png"/><br/>
 3. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.<br/>
 ``az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
 ``
 
-<img src="images/1.png"/><br/>
+<img src="images/deployed.png"/><br/>
 (Now, wait for the deployment to finish.)<br/>
 **Deployment notes to read through while you wait (in other words, what did I just do?)**
 
@@ -43,7 +43,7 @@ o	Ask the lab proctors for more details if you’re curious.<br/>
 
 1. Go to the **Azure Portal**, navigate to your **Resource group**, and click on your newly-created VMSS.<br/>
 2. Go to **Instances**. Note that you only have one – this was defined by the template.<br/>
-<img src="images/1.png"/><br/>
+<img src="images/scalesetinstances.png"/><br/>
 3. Go to individual instance. Here you can view details for your individual VMSS instance - you can restart, deallocate, reimage, or upgrade instance.<br/>
 
 **Note: What is upgrading?**
@@ -66,7 +66,7 @@ There is a bonus section to this lab where you can try this for yourself.<br/>
 1. Go back to the **Overview** section for your scale set.<br/>
 2. Copy the **Public IP address**, and navigate to **<ip-address>:9000** in your browser.<br/>
   •	You will see a landing page that looks like:<br/>
-  <img src="images/2.png"/> <br/>
+  <img src="images/output.png"/> <br/>
 3. To view the autoscale in action, simply click **Start work** on the page.<br/>
 4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once **CPU > 60%**, a new scale set instance will automatically be created.<br/>
 <img src="images/3.png"/><br/>

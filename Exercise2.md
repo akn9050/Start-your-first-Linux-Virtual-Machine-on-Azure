@@ -110,6 +110,7 @@ There is a bonus section to this lab where you can try this for yourself.<br/>
 
 1. For add a password to your VMSS goto the **Reset Password**.<br/>
 2. Enter **Username** and **Password**.<br/>
+<img src="images/resetscalinstances.png"/><br/>
 3. Open up **Serial Console** in your VMSS instance and get the boot diagnostics error.<br/>
 <img src="images/6.png"/><br/>
 4. Update the VMSS model to enable **Boot Diagnostics**, then **Save**.<br/>

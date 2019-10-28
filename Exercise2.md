@@ -1,14 +1,14 @@
-# Exercise 3: Deploy VM Scale Set (15 minutes)
+# Exercise 2: Deploy VM Scale Set (15 minutes)
 
 •	A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. We have used the portal to create a VM, so let's use the Azure CLI to deploy a VMSS and an app to it.<br/>
 
-#### 3.1 Launch Cloud Shell
+#### 2.1 Launch Cloud Shell
 
 1. Select the **Cloud Shell** icon from the upper right corner of the Azure Portal.<br/>
 <img src="images/azureclisign.png"/><br/>
 2. Select **BASH** from drop down in cloud shell window.<br/>
 3. Use your existing bash storage account which we provisioned in **Exercise 1**.<br/>
-#### 3.2 Create a Scale Set
+#### 2.2 Create a Scale Set
 
 1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>
 ``git clone https://github.com/asinn826/Ignite2019VMSS-HOL
@@ -20,7 +20,6 @@
 ``
 
 <img src="images/1.png"/><br/>
-
 3. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.<br/>
 ``az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
 ``
@@ -39,7 +38,7 @@ o	We are bringing cloud-init to Azure VM images, so this will slowly become the 
 o	If you are familiar with cloud-init from other environments, this will function exactly the same.<br/>
 o	Ask the lab proctors for more details if you’re curious.<br/>
 
-**3.3 Familiarizing yourself with your VM scale set (5 minutes)**
+**2.3 Familiarizing yourself with your VM scale set (5 minutes)**
 
 1. Go to the **Azure Portal**, navigate to your **Resource group**, and click on your newly-created VMSS.<br/>
 2. Go to **Instances**. Note that you only have one – this was defined by the template.<br/>
@@ -56,7 +55,7 @@ o	Ask the lab proctors for more details if you’re curious.<br/>
 Note that none of these were configured initially in your VM scale set, so you will need to upgrade the scale set model and then update individual instances to use them.<br/>
 There is a bonus section to this lab where you can try this for yourself.<br/>
 
-**3.4 Use autoscale rules on your VM scale set (25 minutes)**
+**2.4 Use autoscale rules on your VM scale set (25 minutes)**
 1. Go to **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.<br/>
 2. The VMSS will scale automatically based on load as measured by % CPU usage.<br/>
 <img src="images/2.png"/><br/>
@@ -104,7 +103,7 @@ There is a bonus section to this lab where you can try this for yourself.<br/>
 - Elastic loads with no set schedule – devops builds for an organization, a web server that can receive traffic from anywhere at any time
  Note: You can combine multiple scale-out and scale-in conditions.
 
-**3.5 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
+**2.5 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
 
 1. For add a password to your VMSS goto the **Reset Password**.<br/>
 2. Enter **Username** and **Password**.<br/>

@@ -42,9 +42,11 @@
 ``az vm show -d -g ODL-linux-XXXX -n <VM name>  --query publicIps -o tsv
 ``
 2. Run below command to take **SSH** of your virtual machine.<br/>
-  * x.x.x.x :- Replace this with your virtual machine **Public IP**.<br/>
-``ssh azureuser@x.x.x.x
+* x.x.x.x :- Replace this with your virtual machine **Public IP**.<br/>
+``ssh -i <private key name> azureuser@x.x.x.x -p 22
 ``
+
+<img src="images/connect.png "/><br/>
 3. Run this command to logout from ubuntu machine<br/>
 ``logout
 ``

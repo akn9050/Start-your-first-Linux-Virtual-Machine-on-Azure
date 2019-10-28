@@ -37,19 +37,17 @@
 
 ### 1.3 SSH to VM using Public IP
 
-1. Run below command to take **SSH** of your virtual machine.<br/>
+1. To display you virtual machine **Public IP** run below command.<br/>
+``az vm show -d -g ODL-linux-XXXX -n <VM name>  --query publicIps -o tsv
+``
+2. Run below command to take **SSH** of your virtual machine.<br/>
   * x.x.x.x :- Replace this with your virtual machine **Public IP**.<br/>
 ``ssh azureuser@x.x.x.x
 ``
-
-### 2.4 Perform Basic Operation Inside Virtual Machine
-
-1. Run the following commands for the basic operations:<br/>
-<img src="images/task.png"/><br/>
-2.Run this command to logout from ubuntu machine<br/>
+3. Run this command to logout from ubuntu machine<br/>
+``logout
 ``
-gnome-session-quit
-``
+<img src="images/logout.png "/><br/>
 
 ### 2.5 Reset Password of Virtual Machine
 1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>

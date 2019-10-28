@@ -50,6 +50,7 @@
 3. Run this command to logout from ubuntu machine<br/>
 ``logout
 ``
+
 <img src="images/logout.png "/><br/>
 
 ### 2.5 Reset Password of Virtual Machine

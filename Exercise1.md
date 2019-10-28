@@ -55,7 +55,7 @@
 
 ### 2.5 Reset Password of Virtual Machine
 1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>
-<img src="images/reset.png "/><br/>
+<img src="images/resetp.png "/><br/>
 
 ### 2.6 Access Serial Console of Virtual Machine
 

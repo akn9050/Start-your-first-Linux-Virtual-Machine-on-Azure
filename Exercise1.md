@@ -1,4 +1,4 @@
-# Exercise 1: Create your first Linux VM
+# Exercise 1: - Deploy an Azure Linux Virtual Machine using the Azure Portal 
 Duration: 20 Minutes
 
 ### 1.1 Generate SSH Keys for Linux VM Authentication

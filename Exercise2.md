@@ -128,9 +128,9 @@ In this exercise, We'll try to generate load on our newly create application hos
 
 6.You can also **SSH** into your individual instance by running below command in the Cloud Shell:-
   
-       ssh -i <private key name> <adminusername>@<ip-address> -p 50000
+       ssh adminusername@<ip-address -p 50000
  
-   ![](images/ssh.png)
+   ![](images/sshvmss.png)
 
 
 ### 2.6 Autoscale manually in the Azure Portal based on date/time

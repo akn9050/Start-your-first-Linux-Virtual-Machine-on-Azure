@@ -1,11 +1,11 @@
-# Exercise 0: Login into your Azure Portal and Verify access to the Lab Resources
+# Exercise 0: Login to your Azure Portal and Verify access to the Lab Resources
 
-In this exercise, you will login into the **Azure portal** using your lab Azure credentials and you will verify acess to lab resources.
+In this exercise, you will login to the **Azure portal** using your lab Azure credentials and you will verify access to lab resources.
 
 
 ### Login to Azure Portal 
 
-1.Navigate to https://portal.azure.com, It is recommended to use an Private/Incognito browser instance to avoid any conflict with your other Azure Accounts. 
+1.Navigate to https://portal.azure.com, It is recommended to use a Private/Incognito browser instance to avoid any conflict with your other Azure Accounts. 
 
 2.Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**. 
 

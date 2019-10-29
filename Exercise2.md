@@ -24,7 +24,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure
        
    ![](images/gitcontent.png)
    
-5.This repository contains teh ARM Template & Parameter file which will provision a Virtual Machine Scale set and deploy application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a seprate browser tab. 
+5.This repository contains the ARM Template & Parameter file which will provision a Virtual Machine Scale set and deploy application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a seprate browser tab. 
    
 6.Now, You'll need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Let us modify by opening this in **Visual Studio Code**. Run following command to open the parameters file in VSCode. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
       
@@ -33,6 +33,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure
        
        
    > vmssNmae: Give a unique name for your VM scale set.
+   
    > adminSshKey: Paste your **Public key** created earlier. 
 
    ![](images/editprameter.png)
@@ -49,7 +50,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure
    
 **What did you just do**
 
-It'll take 10 to 12 minutes for the deployment to complete. Meanwhile, Let us review what did we just do. 
+It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, Let us review what did we just do. 
 
    * The files azuredeploy.json and azuredeploy.parameters.json are most relevant here.
 
@@ -65,12 +66,13 @@ It'll take 10 to 12 minutes for the deployment to complete. Meanwhile, Let us re
       - We are bringing cloud-init to Azure VM images, so this will slowly become the default option.
       - If you are familiar with cloud-init from other environments, this will function exactly the same.
       - Ask the lab proctors for more details if you’re curious.
+      
 
 ### 2.2 Familiarizing yourself with your VM scale set (5 minutes)
 
 1.In the Azure portal, navigate to your **Resource Group**, and click on your newly-created **Virtual Machine Scale Set**.
 
-2.Go to the **Instances**. Note that you only have one instance, since it was defined in the template parameter file.
+2.Go to the **Instances**. Note that you only have one instance, as per the instance count defined in ARM Template.
 
    ![](images/scalesetinstances.png)
    
@@ -96,14 +98,16 @@ It'll take 10 to 12 minutes for the deployment to complete. Meanwhile, Let us re
    * There is a bonus section to this lab where you can try this for yourself
 
 
+
 ### 2.4 Use autoscale rules on your VM scale set (25 minutes)
 An Azure virtual machine scale set can automatically increase or decrease the number of VM instances that run your application.You create rules that define the acceptable performance for a positive customer experience. When those defined thresholds are met, autoscale rules take action to adjust the capacity of your scale set. You can also schedule events to automatically increase or decrease the capacity of your scale set at fixed times. Let us review the auto-scale settings for your VMSS.
 
 1.Go to the **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.
 
-2.The VMSS will scale automatically based on load  measured by CPU Utilization % of the VMSS Instances.
+2.The VMSS will scale automatically based on load  measured by CPU Utilization % of the VMSS Instances. Currently it's set increase the VMSS by 1 instance if the CPU utilization goes beyond 60% and decrease by 1 instance if CPU utilization goes lower than 60%. Additionally, there're minimum and maximum number of instances defined.  
 
    ![](images/2.png)
+
 
 ### 2.5 Autoscale via the deployed web application
 In this exercise, We'll try to generate load on our newly create application hosted on VMSS. Let's get started
@@ -128,6 +132,7 @@ In this exercise, We'll try to generate load on our newly create application hos
  
    ![](images/ssh.png)
 
+
 ### 2.6 Autoscale manually in the Azure Portal based on date/time
 
 1.In the **Azure Portal** and go to the **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
@@ -149,6 +154,7 @@ In this exercise, We'll try to generate load on our newly create application hos
 
      ![](images/5.png)
 
+
 ### 2.7 Additional Autoscale documentation and information
 
   * See the docs here for more info on autoscale rules:
@@ -163,6 +169,7 @@ Automatically scale out the number of VM instances at the start of the workday w
      - Elastic loads with no set schedule – DevOps builds for an organization, a web server that can receive traffic from anywhere at any time
    
     > Note: You can combine multiple scale-out and scale-in conditions.
+
 
 ### 2.8 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)
 

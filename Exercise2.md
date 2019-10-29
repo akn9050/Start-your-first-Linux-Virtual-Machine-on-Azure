@@ -24,9 +24,9 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure
        
    ![](images/gitcontent.png)
    
-5.This repository contains the ARM Template & Parameter file which will provision a Virtual Machine Scale set and deploy application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a seprate browser tab. 
+5.This repository contains the ARM template & Parameter file which will provision a Virtual Machine Scale set and deploy application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a seprate browser tab. 
    
-6.Now, You'll need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Let us modify by opening this in **Visual Studio Code**. Run following command to open the parameters file in VSCode. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
+6.Now, You'll need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Run the following command to open the parameters file in Visual Studio code. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
       
        code azuredeploy.parameters.json
        
@@ -38,9 +38,9 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure
    
 7.Save and Close the Code Editor once completed. 
 
-8.Now, let's create the deployment by running below command. Please ensure to use your existing **Resource group** named **linux-empty-unique-id** and wait for the deployment to finish. 
+8.Now, let's create the deployment by running below command. Please ensure to use your existing **Resource group** named **linux-empty-XXXX** and wait for the deployment to finish. 
 
-   ``az group deployment create -g ODL-linux-XXXX --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
+   ``az group deployment create -g linux-empty-XXXX --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
    ``
 
    ![](images/deployed.png)

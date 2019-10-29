@@ -33,8 +33,7 @@ In this exercise, You'll be creating a Ubuntu Virtual machine on Azure.
 
    ![](images/suscription.png)
    
-3. Under the **Instance details**, Enter the **Virtual Machine Name** , choose your **Region**, select **Ubuntu Server 18.04 LTS** image and select the virtual machine **size** as **Standard_DS1_v2**. Please note all VM Size's are not allowed in the lab environment, Please ensure to chhose the defined VM Size Only. 
-
+3. Under the **Instance details**, Enter the **Virtual Machine Name** , choose your **Region**, select **Ubuntu Server 18.04 LTS** image and select the virtual machine **size** as **Standard_DS1_v2**. Please note all VM Size's are not allowed in the lab environment, Please ensure to chhose the defined VM Size Only.
    
    ![](images/vmname.png)
    

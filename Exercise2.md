@@ -179,3 +179,6 @@ Automatically scale out the number of VM instances at the start of the workday w
 4.Update the VMSS model to enable **Boot Diagnostics**, then **Save**.
 
    ![](images/7.png)
+
+
+#### This concludes the lab. 

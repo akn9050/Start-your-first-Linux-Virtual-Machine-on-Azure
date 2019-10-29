@@ -24,7 +24,7 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
 
 7.You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter twice to continue without a passphrase.
 
-   ![](images/sshkeygen.png)
+   ![](images/newssh.png)
 
 8.You'll be using the public key while creating the virtual machines, run  **cat /home/odl_user/.ssh/id_rsa.pub** command to view your public key. Please copy the entire content of public key and save in a notepad file for further refrence. 
 

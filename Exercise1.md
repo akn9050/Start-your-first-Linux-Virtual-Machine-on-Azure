@@ -11,7 +11,8 @@
 6. You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location, listed in brackets.<br/>
 7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.<br/>
 8. To display public key run **cat /home/odl_user/public(your public key name)**. Copy the content of public key for further step.<br/>
-**1.2 Create Ubuntu VM from Azure Portal**<br/>
+
+**1.2 Create Ubuntu VM from Azure Portal** <br/>
 1. Click on **Create a resource** in the upper left corner of the Azure portal and select **Ubuntu Server 18.04 LTS**.<br/>
 <img src="images/ubuntunew.png"/><br/>
 2. In the basics tab under **Project details**, make sure the correct **Subscription** is selected and then choose your **Resource  group**.<br/>

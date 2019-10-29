@@ -14,7 +14,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
 
 #### 2.2 Create a Scale Set
 
-1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-
+1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL using below command:-
 
        git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 
@@ -86,7 +86,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
 
    ![](images/2.png)
 
-**Autoscale via the deployed web application**
+**2.5 Autoscale via the deployed web application**
 
 1. Go back to the **Overview** section for your scale set.
 
@@ -108,7 +108,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
  
    ![](images/ssh.png)
 
-**Autoscale manually in the Azure Portal based on date/time**
+**2.6 Autoscale manually in the Azure Portal based on date/time**
 1. Go back to the **Portal** and go to **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
 
 2. Click **Custom Autoscale**, and note all the options you have.
@@ -143,7 +143,7 @@ Automatically scale out the number of VM instances at the start of the work day 
    
     > Note: You can combine multiple scale-out and scale-in conditions.
 
-**2.5 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
+**2.7 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
 
 1. For add a password to your VMSS goto the **Reset Password**.
 

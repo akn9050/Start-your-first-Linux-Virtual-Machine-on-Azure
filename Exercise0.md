@@ -2,7 +2,7 @@
 
 In this exercise, you will log into the **Azure portal** using your lab Azure credentials and you will verify acess to lab resources.
 
-1.Click on the **Environment Details** tab on this Page to view your **Azure Lab** credentials details. Use these details to login into the Azure portal.
+1.Click on the **Environment Details** tab on this page to view your **Azure Lab** credentials details. Use these details to login into the Azure portal.
 
    ![](images/azurelogincredentials.png)
 

@@ -38,12 +38,10 @@
 2. Run below command to take **SSH** of your virtual machine.<br/>
 * x.x.x.x :- Replace this with your virtual machine **Public IP**.<br/>
 ``ssh -i <private key name> azureuser@x.x.x.x -p 22
-``
-<img src="images/connect.png "/><br/>
+``<img src="images/connect.png "/><br/>
 3. Run this command to logout from ubuntu machine<br/>
 ``logout
-``
-<img src="images/logout.png "/><br/>
+``<img src="images/logout.png "/><br/>
 ### 1.4 Reset Password of Virtual Machine<br/>
 1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>
 <img src="images/resetp.png "/><br/>

@@ -32,7 +32,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure
        
        
        
-   > vmssNmae: Give a unique name for your VM scale set.
+   > vmssName: Give a unique name for your VM scale set.
    
    > adminSshKey: Paste your **Public key** created earlier. 
 

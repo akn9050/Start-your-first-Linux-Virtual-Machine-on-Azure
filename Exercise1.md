@@ -26,6 +26,7 @@
 2. In the basics tab under **Project details**, make sure the correct **Subscription** is selected and then choose your **Resource  group**.
 
    ![](images/suscription.png)
+   
 3. Under **Instance details**, type **Virtual Machine Name** , choose your **Region**, select **Ubuntu Server 18.04 LTS or Ubuntu Server   16.04 LTS** image and select the virtual machine **size** from the following:
 
    ```
@@ -36,7 +37,7 @@
    
 4. Under **Administrator account** select **SSH Public Key** for authentication type. Provide **User Name** and paste your **Public key**.
 
-   ![]images/sshselcet.png)
+   ![](images/sshselcet.png)
 
 5. Under **Inbound port** rules > Public inbound ports, choose **Allow selected ports** and then select **SSH (22)** from the drop-down.
 
@@ -56,11 +57,11 @@
 
        az vm show -d -g ODL-linux-XXXX -n <VM name>  --query publicIps -o tsv
 
-2. Run below command to take **SSH** of your virtual machine.
+2. Run below command to take **SSH** of your virtual machine.  
 
-   * x.x.x.x :- Replace this with your virtual machine **Public IP**.
-
-         ssh -i <private key name> azureuser@x.x.x.x -p 22
+       ssh -i <private key name> azureuser@x.x.x.x -p 22
+       
+   > Note: x.x.x.x : Replace this with your virtual machine **Public IP**.
          
     ![](images/connect.png)
     
@@ -80,6 +81,6 @@
 
 1. For using serial console of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Serial Console**.
 
-![]("images/serialconsole.png)
+![](images/serialconsole.png)
 
 2. Select power botton to **Restrat** or **Rest** the virtual machine.

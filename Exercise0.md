@@ -5,7 +5,7 @@ In this exercise, you will log into the **Azure Portal** using your Azure creden
 
 ### Login to Azure Portal 
 
-1. **Navigate** to https://portal.azure.com and login using the credentials provided in previous step. We'd recommend using an InPrivate browser window for this. (From the previous step).<br/>
+1. **Navigate** to https://portal.azure.com and login using the credentials provided in previous step. We'd recommend using an InPrivate browser window for this.<br/>
 1. **Enter** the **Username** and **click** on **Next**.<br/>
 1. On Stay signed in? pop-up window, click **No**. **Enter** the **Password** and click on **Sign in**.<br/>
 <img src="images/fpage.png "/><br/>

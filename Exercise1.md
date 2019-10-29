@@ -1,6 +1,6 @@
 # Exercise 1: Create your first Linux VM (10 minutes)
 
-**1.1 Generate SSH Keys to use with Linux Virtual Machine**
+**1.1 SSH Key Genration**
 
 In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtual Machine
 1. Select the **Cloud Shell** from the upper right corner of the Azure Portal.
@@ -9,17 +9,17 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
    
 2. Select **BASH** in cloud shell window.
 3. Select **Show Advance Setting**.
-4. Create a storage accounr for Bash, provide unique name for **Storage Account**, **File share** and then click on **Create Storage**.
+4. Create a storage account for Bash, provide unique name for **Storage Account**, **File share** and select the **Cloud Shell region** as **East US** then click on **Create Storage**.
 
    ![](images/bashst.png)
 
-5. Type **ssh-keygen -t rsa -b 2048** to create the ssh key.
+5. Type **ssh-keygen -t rsa -b 2048** to genrate the ssh key.
 
    ![](images/sshkeygen.png)
 
 6. You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location, listed in brackets.
 7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.
-8. To display public key run **cat /home/odl_user/public(your public key name)**. Copy the content of public key for further step.
+8. To display public key run **cat /home/odl_user/.ssh/id_rsa.pub**. Copy the content of public key for further step.
 
 **1.2 Create Ubuntu VM from Azure Portal**
 

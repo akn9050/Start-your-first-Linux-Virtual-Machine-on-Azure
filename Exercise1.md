@@ -14,7 +14,7 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
 
   <kbd> ![](images/linux3.png) </kbd>
 
-4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please note that you've to choose existing resource group named **linux-empty-UNIQUEID** to create this, Since the lab environment doesn't allow you to create new resource groups. 
+4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please note that you've to choose existing resource group named **linux-empty-XXXX** to create this, Since the lab environment doesn't allow you to create new resource groups. 
 
    ![](images/newstorage.png)
 
@@ -35,7 +35,7 @@ In this exercise, You'll be creating a Ubuntu Virtual machine using Azure Portal
 
    ![](images/ubuntunew.png)
    
-2.In the basics tab under the **Virtual Machine Details**, make sure the existing **Subscription** and existing  **Resource group** named **linux-empty-unique-id** is selected
+2.In the basics tab under the **Virtual Machine Details**, make sure the existing **Subscription** and existing  **Resource group** named **linux-empty-XXXX** is selected
 
    ![](images/suscription.png)
    
@@ -64,14 +64,14 @@ In this exercise, You'll be creating a Ubuntu Virtual machine using Azure Portal
 
 In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlier through SSH. We'll be using **Cloud Shell** for this.
 
-1.Let us list down the VMs running in your lab environment using **Cloud Shell**
+1.Let us list down the VMs running in your lab environment using **Cloud Shell**.
 
        az vm list -o table
        
    
    ![](images/linux4.png)
    
-2.Now, Let's find out the Public IP of your recently created Virtual Machine. Execute Following command in **Cloud Shell**, Please ensure to replace the resource group name **linux-empty-UNIQUEID** and **<VM Name>** with your lab environment values, you can review those from last step.
+2.Now, Let's find out the Public IP of your recently created Virtual Machine. Execute Following command in **Cloud Shell**, Please ensure to replace the resource group name **linux-empty-XXXX** and **<VM Name>** with your lab environment values, you can review those from last step.
 
        az vm show -d -g linux-empty-XXXX -n <VM name>  --query publicIps -o tsv
 
@@ -95,7 +95,7 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
    ![](images/logout.png) 
 
 ### 1.4 Reset Password of Virtual Machine
-Azure allows you to reset password or ssh key for Virtual Machines using Azure Portal. Let's take a look at how to do reset password or sshkeys for your Linux Virtual Machines. 
+Azure allows you to reset password or ssh key for virtual machines using Azure portal. Let's take a look at how to reset password or sshkeys for your Linux virtual machines. 
 
 1.To reset the password or sshkey of the Ubuntu virtual machine, Navigate to the **Resource Groups > Your Resource Group > Your Virtual Machine > Overview > Support + Troubleshooting >Reset Password**.
 

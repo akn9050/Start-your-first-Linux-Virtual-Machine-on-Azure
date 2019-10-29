@@ -1,4 +1,5 @@
-# Exercise 1: Create your first Linux VM (10 minutes)
+# Exercise 1: Create your first Linux VM
+Duration: 20 Minutes
 
 ### 1.1 Generate SSH Keys for Linux VM Authentication
 

@@ -7,9 +7,9 @@ In this exercise, you will log into the **Azure portal** using your lab Azure cr
 
 1.Navigate to https://portal.azure.com, It is recommended to use an InPrivate/Incognito browser instance to avoid any conflict with your other Azure Accounts. 
 
-2.Use <inject key="AzureAdUserEmail"></inject> as **Username** and click on **Next**. 
+2.Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**. 
 
-3.In next step, use <inject key="AzureAdUserPassword"></inject> as **Password**  and Click **Sign In**
+3.In next step, use **<inject key="AzureAdUserPassword"></inject>** as **Password**  and Click **Sign In**
 
 4.On Stay signed in pop-up window, click **No**.
 

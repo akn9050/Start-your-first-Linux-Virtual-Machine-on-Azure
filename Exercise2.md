@@ -1,10 +1,11 @@
-# Exercise 2: Deploy VM Scale Set (15 minutes)
+# Exercise 2: Deploy VM Scale Set
+Duration: 45 Minutes
 
 A VM scale set (VMSS) is a way to deploy several similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. In last exercise, we used the **Azure Portal** to create a VM, so let's use the Azure CLI and ARM Template to deploy a VMSS and an app to it. 
 
 
 ### 2.1 Create a Scale Set
-In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure cli command line and ARM templates. Let's get started.
+In this exercise, You'll be creating a **Virtual Machine Scale Set** using the Azure Cloud Shell and ARM templates. Let's get started.
 
 1.Select the **Cloud Shell** icon from the upper right corner of the Azure Portal.
 
@@ -65,7 +66,7 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, Let us revi
       - Ask the lab proctors for more details if you’re curious.
       
 
-### 2.2 Familiarizing yourself with your VM scale set (5 minutes)
+### 2.2 Familiarizing yourself with your VM scale set
 
 1.In the Azure portal, navigate to your **Resource Group**, and click on your newly-created **Virtual Machine Scale Set**.
 
@@ -96,7 +97,7 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, Let us revi
 
 
 
-### 2.4 Use autoscale rules on your VM scale set (25 minutes)
+### 2.4 Use autoscale rules on your VM scale set
 An Azure virtual machine scale set can automatically increase or decrease the number of VM instances that run your application.You create rules that define the acceptable performance for a positive customer experience. When those defined thresholds are met, autoscale rules take action to adjust the capacity of your scale set. You can also schedule events to automatically increase or decrease the capacity of your scale set at fixed times. Let us review the auto-scale settings for your VMSS.
 
 1.Go to the **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.
@@ -111,7 +112,7 @@ In this exercise, We'll try to generate load on our newly create application hos
 
 1.Go back to the **Overview** section for your scale set.
 
-2.Copy the **Public IP address**, and navigate to **publicIpaddress:9000** in your browser. Please ensure to add port 9000 along with Public IP.  You will see a landing page that looks like:
+2.Copy the **Public IP address**, open a new tab in browser and paste the public ip address with port number 9000 (**publicIpaddress:9000**). You will see a landing page that looks like:
    
    ![](images/output.png)
    

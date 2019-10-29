@@ -82,7 +82,7 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
 
        ssh azureuser@x.x.x.x
           
-   ![](images/connect.png)
+   ![](images/newssh.png)
     
 4.Type **yes** and hit enter when you're asked if you want to continue connecting to the virtual machine. 
 

@@ -16,7 +16,7 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
 
 4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please note that you've to choose existing resource group named **linux-empty-UNIQUEID** to create this, Since the lab environment doesn't allow you to create new resource groups. 
 
-   ![](images/bashst.png)
+   ![](images/newstorage.png)
 
 5.Once your cloud shell is ready, run **ssh-keygen -t rsa -b 2048** command to generate the ssh key.
 

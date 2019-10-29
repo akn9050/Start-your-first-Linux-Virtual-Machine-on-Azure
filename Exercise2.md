@@ -110,7 +110,7 @@ In this exercise, We'll try to generate load on our newly create application hos
 
 1.Go back to the **Overview** section for your scale set.
 
-2.Copy the **Public IP address**, and navigate to **<ip-address>:9000** in your browser. Please ensure to add port 9000 along with Public IP.  You will see a landing page that looks like:
+2.Copy the **Public IP address**, and navigate to **publicIpaddress:9000** in your browser. Please ensure to add port 9000 along with Public IP.  You will see a landing page that looks like:
    
    ![](images/output.png)
    

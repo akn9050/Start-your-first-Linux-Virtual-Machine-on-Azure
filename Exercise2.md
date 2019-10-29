@@ -20,7 +20,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
 
    ![](images/github.png)
    
-2. To dispaly repo content use below command:-
+2. To display repo content use below command:-
   
        cd Ignite2019VMSS-HOL
        
@@ -70,7 +70,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
 
    * If the model changes, you will need to upgrade the instance(s) to the latest model - hence the Upgrade button in the UI (you can also configure scale sets to automatically upgrade when the model changes).
 
-   * If you have more questions, ask a proctor.<br/>
+   * If you have more questions, ask a proctor.
 
    * In the instance view, you can also access features like Azure Bastion, Serial console, and Boot diagnostics.
 
@@ -145,7 +145,7 @@ Automatically scale out the number of VM instances at the start of the work day 
 
 **2.7 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
 
-1. For add a password to your VMSS goto the **Reset Password**.
+1. To add a password to your VMSS goto the **Reset Password**.
 
 2. Enter **Username** and **Password**.
 

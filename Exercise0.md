@@ -5,7 +5,7 @@ In this exercise, you will login into the **Azure portal** using your lab Azure 
 
 ### Login to Azure Portal 
 
-1.Navigate to https://portal.azure.com, It is recommended to use an InPrivate/Incognito browser instance to avoid any conflict with your other Azure Accounts. 
+1.Navigate to https://portal.azure.com, It is recommended to use an Private/Incognito browser instance to avoid any conflict with your other Azure Accounts. 
 
 2.Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**. 
 

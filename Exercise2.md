@@ -30,15 +30,12 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using azure
       
        code azuredeploy.parameters.json
        
-       
-       
    > vmssName: Give a unique name for your VM scale set.
    
    > adminSshKey: Paste your **Public key** created earlier. 
 
    ![](images/editprameter.png)
    
-
 7.Save and Close the Code Editor once completed. 
 
 8.Now, let's create the deployment by running below command. Please ensure to use your existing **Resource group** named **linux-empty-unique-id** and wait for the deployment to finish. 
@@ -106,7 +103,7 @@ An Azure virtual machine scale set can automatically increase or decrease the nu
 
 2.The VMSS will scale automatically based on load  measured by CPU Utilization % of the VMSS Instances. Currently it's set increase the VMSS by 1 instance if the CPU utilization goes beyond 60% and decrease by 1 instance if CPU utilization goes lower than 60%. Additionally, there're minimum and maximum number of instances defined.  
 
-   ![](images/2.png)
+   ![](autoscalerule.png)
 
 
 ### 2.5 Autoscale via the deployed web application
@@ -122,7 +119,7 @@ In this exercise, We'll try to generate load on our newly create application hos
 
 4.Then, go back to the VM scale set in the Azure portal and watch its CPU rise once CPU Utlization is higher than 60%, a new scale set instance will automatically be created.
 
-   ![](images/3.png)
+   ![](images/cpuutilization.png)
    
 5.Go to the **Instances** and watch VM getting created.
 
@@ -152,7 +149,7 @@ In this exercise, We'll try to generate load on our newly create application hos
    - **Start date**: Enter time of 2 minutes from now to test the scheduler.
    - **End date**: Enter time of 10 minutes from now to test the scheduler.
 
-     ![](images/5.png)
+     ![](images/autorule.png)
 
 
 ### 2.7 Additional Autoscale documentation and information

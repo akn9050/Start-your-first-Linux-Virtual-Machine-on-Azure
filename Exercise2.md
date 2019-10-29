@@ -18,16 +18,17 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
 
        git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 
-   ![]("images/github.png)
+   ![](images/github.png)
+   
 2. To dispaly repo content use below command:-
   
        cd Ignite2019VMSS-HOL
        
-   ![]("images/gitcontent.png)
+   ![](images/gitcontent.png)
    
 3. Edit your **azuredeploy.parameters.json**.
 
-   ![]("ima ges/editprameter.png)
+   ![](images/editprameter.png)
    
    > Note vmssNmae:- Give unipe name for vmss.
    > adminSshKey:- Paste your **Public key**.

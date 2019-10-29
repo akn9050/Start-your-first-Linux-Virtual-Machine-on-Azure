@@ -42,7 +42,8 @@
 <img src="images/connect.png "/><br/>
 3. Run this command to logout from ubuntu machine<br/>
 ``logout
-``<img src="images/logout.png "/><br/>
+``
+<img src="images/logout.png "/><br/>
 
 ### 1.4 Reset Password of Virtual Machine<br/>
 1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>

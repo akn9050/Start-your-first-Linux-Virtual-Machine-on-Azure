@@ -24,9 +24,9 @@ In this exercise, you will log into the **Azure portal** using your lab Azure cr
    
 6.You're provided with two pre-created **Resource Groups** in the Lab. Let's review them.
 
--linux-empty-UNIQUEID: Please use this resource group to deploy all resources as a part of this lab guide. This resource group does not contain any existing resources. 
+* linux-empty-UNIQUEID: Please use this resource group to deploy all resources as a part of this lab guide. This resource group does not contain any existing resources. 
 
--linux-completed-UNIQUEID: This resource group is having a pre-created Virtual Machine Scale Set. You can use this to perform lab exercise without provisioning a new VM Scale Set. 
+* linux-completed-UNIQUEID: This resource group is having a pre-created Virtual Machine Scale Set. You can use this to perform lab exercise without provisioning a new VM Scale Set. 
 
    ![](images/linux2.png)
 

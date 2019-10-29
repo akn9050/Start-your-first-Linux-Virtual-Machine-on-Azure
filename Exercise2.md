@@ -26,8 +26,7 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
    
 3. Edit your **azuredeploy.parameters.json**.
       
-      code azuredeploy.parameters.json
-
+       code azuredeploy.parameters.json
 
    ![](images/editprameter.png)
    

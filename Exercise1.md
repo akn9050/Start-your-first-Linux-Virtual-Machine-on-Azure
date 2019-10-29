@@ -1,6 +1,6 @@
 # Exercise 1: Create your first Linux VM (10 minutes)
 
-### 1.1 Generate SSH Keys for Linux VM Authentication**
+### 1.1 Generate SSH Keys for Linux VM Authentication
 
 In this exercise, We'll be generating SSH Keys which will be used to authenticate with Linux Virtual Machines. 
 
@@ -26,7 +26,7 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
 
 8.You'll be using the public key while creating the virtual machines, run  **cat /home/odl_user/.ssh/id_rsa.pub** command to view your public key. Please copy the entire content of public key and save in a notepad file for further refrence. 
 
-### 1.2 Create the Ubuntu VM from Azure Portal**
+### 1.2 Create the Ubuntu VM from Azure Portal
 In this exercise, You'll be creating a Ubuntu Virtual machine using Azure Portal. Let's get started
 
 1.Click on the **Create a resource** in the upper left corner of the Azure portal and select **Ubuntu Server 18.04 LTS**.

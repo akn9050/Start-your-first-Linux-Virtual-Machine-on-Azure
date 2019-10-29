@@ -9,8 +9,10 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
    ![](images/azureclisign.png)
    
 2.Select the **Bash** in the cloud shell window.
+
 3.Select **Show advance settings**. 
-   ![](images/linux3.png)
+
+  <kbd> ![](images/linux3.png) </kbd>
 
 4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please note that you've to choose existing resource group named **linux-empty-UNIQUEID** to create this, Since the lab environment doesn't allow you to create new resource groups. 
 
@@ -18,11 +20,11 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
 
 5.Once your cloud shell is ready, run **ssh-keygen -t rsa -b 2048** command to generate the ssh key.
 
-   ![](images/sshkeygen.png)
-
 6.You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location i.e **/home/odl_user/.ssh/id_rsa**.
 
 7.You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter twice to continue without a passphrase.
+
+   ![](images/sshkeygen.png)
 
 8.You'll be using the public key while creating the virtual machines, run  **cat /home/odl_user/.ssh/id_rsa.pub** command to view your public key. Please copy the entire content of public key and save in a notepad file for further refrence. 
 
@@ -60,14 +62,15 @@ In this exercise, You'll be creating a Ubuntu Virtual machine using Azure Portal
 
 ### 1.3 SSH to VM using Public IP
 
-In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlier through SSH. We'll be using **Cloud Shell** for this. 
+In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlier through SSH. We'll be using **Cloud Shell** for this.
+
 1.Let us list down the VMs running in your lab environment using **Cloud Shell**
 
        az vm list -o table
        
+   
    ![](images/linux4.png)
-
-
+   
 2.Now, Let's find out the Public IP of your recently created Virtual Machine. Execute Following command in **Cloud Shell**, Please ensure to replace the resource group name **linux-empty-UNIQUEID** and **<VM Name>** with your lab environment values, you can review those from last step.
 
        az vm show -d -g linux-empty-XXXX -n <VM name>  --query publicIps -o tsv
@@ -77,9 +80,9 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
    > x.x.x.x : Replace this with your virtual machine **Public IP**.
    > azureuser: Replace this with the username you entered while creating the virtual machine in last step. 
 
-       ssh azureuser@x.x.x.x -p 22
+       ssh azureuser@x.x.x.x
           
-    ![](images/connect.png)
+   ![](images/connect.png)
     
 4.Type **yes** and hit enter when you're asked if you want to continue connecting to the virtual machine. 
 

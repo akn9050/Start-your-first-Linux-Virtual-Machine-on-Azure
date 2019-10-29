@@ -90,7 +90,7 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, Let us revi
 
    * There is a bonus section to this lab where you can try this for yourself.
  
- In the instance view, you can also access features like Azure Bastion, Serial console, and Boot diagnostics
+ In the instance view, you can also access features like Azure Bastion, Serial console, and Boot diagnostics.
  
    * Note that none of these were configured initially in your VM scale set, so you will need to upgrade the scale set model and then update individual instances to use them
    * There is a bonus section to this lab where you can try this for yourself
@@ -108,7 +108,7 @@ An Azure virtual machine scale set can automatically increase or decrease the nu
 
 
 ### 2.5 Autoscale via the deployed web application
-In this exercise, We'll try to generate load on our newly create application hosted on VMSS. Let's get started
+In this exercise, We'll try to generate load on our newly create application hosted on VMSS. Let's get started.
 
 1.Go back to the **Overview** section for your scale set.
 
@@ -133,7 +133,7 @@ In this exercise, We'll try to generate load on our newly create application hos
 
 ### 2.6 Autoscale manually in the Azure Portal based on date/time
 
-1.In the **Azure Portal** and go to the **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
+1.In the **Azure Portal** and go to the **Scaling**, and let's try out creating a scheduled autoscale rule. (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
 
 2.Click the **Custom Autoscale**, and note all the options you have.
 
@@ -164,7 +164,7 @@ Automatically scale out the number of VM instances at the start of the workday w
   * If a department uses an application heavily at certain parts of the month or fiscal cycle, automatically scale the number of VM instances to accommodate their additional demands.
   * When there is a marketing event, promotion, or holiday sale, you can automatically scale the number of VM instances ahead of anticipated customer demand.
   * The following scenarios may benefit from load-based autoscale:
-     - Elastic loads with no set schedule – DevOps builds for an organization, a web server that can receive traffic from anywhere at any time
+     - Elastic loads with no set schedule – DevOps builds for an organization, a web server that can receive traffic from anywhere at any time.
    
     > Note: You can combine multiple scale-out and scale-in conditions.
 
@@ -185,5 +185,6 @@ Automatically scale out the number of VM instances at the start of the workday w
 
    ![](images/7.png)
 
-
+Congratulations!
+Now we have the VM and VMSS up and running!
 #### This concludes the lab. 

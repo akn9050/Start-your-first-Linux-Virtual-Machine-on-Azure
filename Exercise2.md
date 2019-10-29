@@ -1,124 +1,171 @@
 # Exercise 2: Deploy VM Scale Set (15 minutes)
 
-•	A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. We have used the portal to create a VM, so let's use the Azure CLI to deploy a VMSS and an app to it.<br/>
+A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. We have used the portal to create a VM, so let's use the Azure CLI to deploy a VMSS and an app to it.
 
 #### 2.1 Launch Cloud Shell
 
-1. Select the **Cloud Shell** icon from the upper right corner of the Azure Portal.<br/>
-<img src="images/azureclisign.png"/><br/>
-2. Select **BASH** from drop down in cloud shell window.<br/>
-3. Use your existing bash storage account which we provisioned in **Exercise 1**.<br/>
+1. Select the **Cloud Shell** icon from the upper right corner of the Azure Portal.
+
+   ![](images/azureclisign.png)
+   
+2. Select **BASH** from drop down in cloud shell window.
+
+3. Use your existing bash storage account which we provisioned in **Exercise 1**.
 
 #### 2.2 Create a Scale Set
 
-1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-<br/>
-``git clone https://github.com/asinn826/Ignite2019VMSS-HOL
-``
+1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL usin below command:-
 
-<img src="images/github.png"/><br/>
-2. To dispaly repo content use below command:-<br/>
-``cd Ignite2019VMSS-HOL
-``
+       git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 
-3. Edit your **azuredeploy.parameters.json**. <br/>
-- vmssNmae:- Give unipe name for vmss.<br/>
-- adminSshKey:- Paste your **Public key**.<br/>
+   ![]("images/github.png)
+2. To dispaly repo content use below command:-
+  
+       cd Ignite2019VMSS-HOL
+       
+   ![]("images/gitcontent.png)
+   
+3. Edit your **azuredeploy.parameters.json**.
 
-<img src="images/editprameter.png"/><br/>
-4. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.<br/>
+   ![]("ima ges/editprameter.png)
+   
+   > Note vmssNmae:- Give unipe name for vmss.
+   > adminSshKey:- Paste your **Public key**.
+   
+4. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.
+
 ``az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
 ``
 
-<img src="images/deployed.png"/><br/>
-(Now, wait for the deployment to finish.)<br/>
-**Deployment notes to read through while you wait (in other words, what did I just do?)**
+   ![](images/deployed.png")
+   
+(Now, wait for the deployment to finish.)
 
-•	The files azuredeploy.json and azuredeploy.parameters.json are most relevant here.<br/>
-•	The command above just deployed a virtual machine scale set (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview).<br/> 
-•	VM scale sets are great for scaling out applications – for example, if you are running a workload and you anticipate a spike in holiday-related traffic, the VMSS can scale out automatically to meet your compute needs, and scale back in when traffic subsides.<br/>
-•	The template deployed the VMSS using a Red Hat Enterprise Linux (RHEL) image, one of the many available images in the Azure Marketplace.<br/>
-•	The template also used cloud-init to deploy a simple web application onto the VM. The cloud-init script runs once, at the beginning of deployment, to configure the VM to its desired end state.<br/>
-•	Note about cloud-init: the RHEL image we chose has cloud-init enabled, which means that cloud-init is the provisioning agent<br/>
-o	We are bringing cloud-init to Azure VM images, so this will slowly become the default option.<br/>
-o	If you are familiar with cloud-init from other environments, this will function exactly the same.<br/>
-o	Ask the lab proctors for more details if you’re curious.<br/>
+**Deployment notes to read through while you wait (what did I just do?)**
+
+* The files azuredeploy.json and azuredeploy.parameters.json are most relevant here.
+
+* The command above just deployed a virtual machine scale set (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview).
+
+* VM scale sets are great for scaling out applications – for example, if you are running a workload and you anticipate a spike in holiday-related traffic, the VMSS can scale out automatically to meet your compute needs, and scale back in when traffic subsides.
+* The template deployed the VMSS using a Red Hat Enterprise Linux (RHEL) image, one of the many available images in the Azure Marketplace.
+* The template also used cloud-init to deploy a simple web application onto the VM. The cloud-init script runs once, at the beginning of deployment, to configure the VM to its desired end state.
+* Note about cloud-init: the RHEL image we chose has cloud-init enabled, which means that cloud-init is the provisioning agent.
+   - We are bringing cloud-init to Azure VM images, so this will slowly become the default option.
+   - If you are familiar with cloud-init from other environments, this will function exactly the same.
+   - Ask the lab proctors for more details if you’re curious.
 
 **2.3 Familiarizing yourself with your VM scale set (5 minutes)**
 
-1. Go to the **Azure Portal**, navigate to your **Resource group**, and click on your newly-created VMSS.<br/>
-2. Go to **Instances**. Note that you only have one – this was defined by the template.<br/>
-<img src="images/scalesetinstances.png"/><br/>
-3. Go to individual instance. Here you can view details for your individual VMSS instance - you can restart, deallocate, reimage, or upgrade instance.<br/>
+1. Go to the **Azure Portal**, navigate to your **Resource group**, and click on your newly-created VMSS.
+
+2. Go to **Instances**. Note that you only have one – this was defined by the template.
+
+   ![](images/scalesetinstances.png)
+   
+3. Go to individual instance. Here you can view details for your individual VMSS instance - you can restart, deallocate, reimage, or upgrade instance.
 
 **Note: What is upgrading?**
 
-- VM scale sets work on a model basis - there is a model that the scale set follows, and all VMs within the scale set have the same configuration as defined in the model.<br/>
-- If the model changes, you will need to upgrade the instance(s) to the latest model - hence the Upgrade button in the UI (you can also configure scale sets to automatically upgrade when the model changes)<br/>
-- If you have more questions, ask a proctor.<br/>
+* VM scale sets work on a model basis - there is a model that the scale set follows, and all VMs within the scale set have the same configuration as defined in the model.
 
-•	In the instance view, you can also access features like Azure Bastion, Serial console, and Boot diagnostics.<br/>
-Note that none of these were configured initially in your VM scale set, so you will need to upgrade the scale set model and then update individual instances to use them.<br/>
-There is a bonus section to this lab where you can try this for yourself.<br/>
+* If the model changes, you will need to upgrade the instance(s) to the latest model - hence the Upgrade button in the UI (you can also configure scale sets to automatically upgrade when the model changes).
+
+* If you have more questions, ask a proctor.<br/>
+
+* In the instance view, you can also access features like Azure Bastion, Serial console, and Boot diagnostics.
+
+* Note that none of these were configured initially in your VM scale set, so you will need to upgrade the scale set model and then update individual instances to use them.
+
+* There is a bonus section to this lab where you can try this for yourself.
 
 **2.4 Use autoscale rules on your VM scale set (25 minutes)**
-1. Go to **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.<br/>
-2. The VMSS will scale automatically based on load as measured by % CPU usage.<br/>
-<img src="images/2.png"/><br/>
+
+1. Go to **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.
+
+2. The VMSS will scale automatically based on load as measured by % CPU usage.
+
+   ![](images/2.png)
 
 **Autoscale via the deployed web application**
 
-1. Go back to the **Overview** section for your scale set.<br/>
-2. Copy the **Public IP address**, and navigate to **<ip-address>:9000** in your browser.<br/>
-  •	You will see a landing page that looks like:<br/>
-  <img src="images/output.png"/> <br/>
-3. To view the autoscale in action, simply click **Start work** on the page.<br/>
-4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once **CPU > 60%**, a new scale set instance will automatically be created.<br/>
-<img src="images/3.png"/><br/>
+1. Go back to the **Overview** section for your scale set.
+
+2. Copy the **Public IP address**, and navigate to **<ip-address>:9000** in your browser. You will see a landing page that looks like:
+   
+   ![](images/output.png)
+   
+3. To view the autoscale in action, simply click **Start work** on the page.
+
+4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise Once **CPU > 60%**, a new scale set instance will automatically be created.
+
+   ![](images/3.png)
+   
 5. Go to **Instances** and watch VMs get created.
-6. You can also **SSH** into your individual instance by running below command in Cloud shell:-<br/>
+
+6. You can also **SSH** into your individual instance by running below command in Cloud shell:-
   
- ``
- ssh -i <private key name> <adminusername>@<ip-address> -p 50000
- ``
+       ssh -i <private key name> <adminusername>@<ip-address> -p 50000
  
- <img src="images/ssh.png"/><br/>
+   ![](images/ssh.png)
 
 **Autoscale manually in the Azure Portal based on date/time**
 
 1. Go back to the **Portal** and go to **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
-2. Click **Custom Autoscale**, and note all the options you have.<br/>
-<img src="images/4.png"/><br/>
-3. Leave the auto created scale condition with the **Default Settings**.<br/>
-4. Click on **Add a scale set condition**.<br/>
-- Select **Sale to a specific instance count**.<br/>
-- Set Instance count to a **Random number** >1 and <100.<br/>
-- Select **Specify start/end dates**.<br/>
-- **Timezone**: (UTC-05:00) Eastern Time (US & Canada).<br/>
-- **Start date**: today, November 15, 2019, and a time a minute or two in the future<br/>
-- **End date**: today, November 15, 2019, and a time several minutes in the future<br/>
-<img src="images/5.png"/><br/>
+
+2. Click **Custom Autoscale**, and note all the options you have.
+
+   ![](images/4.png)
+3. Leave the auto created scale condition with the **Default Settings**.
+
+4. Click on **Add a scale set condition**.
+
+- Select **Sale to a specific instance count**.
+
+- Set Instance count to a **Random number** >1 and <100.
+
+- Select **Specify start/end dates**.
+
+- **Timezone**: (UTC-05:00) Eastern Time (US & Canada).
+
+- **Start date**: today, November 15, 2019, and a time a minute or two in the future.
+
+- **End date**: today, November 15, 2019, and a time several minutes in the future.
+
+  ![](images/5.png)
 
 **Autoscale documentation and information**
+
 •	See the docs here for more info on autoscale rules: 
+
 	https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview
 	https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-portal
+
 •	The following examples are scenarios that may benefit the use of schedule-based autoscale rules:
-	Automatically scale out the number of VM instances at the start of the work day when customer demand increases. At the end of the work day, automatically scale in the number of VM instances to minimize resource costs overnight when application use is low.
+
+Automatically scale out the number of VM instances at the start of the work day when customer demand increases. At the end of the work day, automatically scale in the number of VM instances to minimize resource costs overnight when application use is low.
 * If a department uses an application heavily at certain parts of the month or fiscal cycle, automatically scale the number of VM instances to accommodate their additional demands.
 * When there is a marketing event, promotion, or holiday sale, you can automatically scale the number of VM instances ahead of anticipated customer demand.
-•	The following scenarios may benefit from load-based autoscale:
-- Elastic loads with no set schedule – devops builds for an organization, a web server that can receive traffic from anywhere at any time
+* The following scenarios may benefit from load-based autoscale:
+   - Elastic loads with no set schedule – devops builds for an organization, a web server that can receive traffic from anywhere at any time
+   
  Note: You can combine multiple scale-out and scale-in conditions.
 
 **2.5 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
 
-1. For add a password to your VMSS goto the **Reset Password**.<br/>
-2. Enter **Username** and **Password**.<br/>
-<img src="images/resetscalinstances.png"/><br/>
-3. Open up **Serial Console** in your VMSS instance and get the boot diagnostics error.<br/>
-<img src="images/6.png"/><br/>
-4. Update the VMSS model to enable **Boot Diagnostics**, then **Save**.<br/>
-<img src="images/7.png"/><br/>
+1. For add a password to your VMSS goto the **Reset Password**.
+
+2. Enter **Username** and **Password**.
+
+   ![](images/resetscalinstances.png)
+   
+3. Open up **Serial Console** in your VMSS instance and get the boot diagnostics error.
+
+   ![](images/6.png)
+   
+4. Update the VMSS model to enable **Boot Diagnostics**, then **Save**.
+
+   ![](images/7.png)
 
  
 

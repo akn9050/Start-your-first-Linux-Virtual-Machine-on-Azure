@@ -8,11 +8,11 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
 
    ![](images/azureclisign.png)
    
-2. Select **BASH** from the drop-down in the cloud shell window.
+2. Select the **BASH** from the drop-down in the cloud shell window.
 
 #### 2.2 Create a Scale Set
 
-1. Select **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL using below command:-
+1. Select the **Cloud shell** and clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL using below command:-
 
        git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 
@@ -92,7 +92,7 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
    
    ![](images/output.png)
    
-3. To view the autoscale in action, simply click **Start work** on the page.
+3. To view the autoscale in action, simply click the **Start work** on the page.
 
 4. Then, go back to the VM scale set in the Azure portal and watch its CPU rise once **CPU > 60%**, a new scale set instance will automatically be created.
 
@@ -107,7 +107,7 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
    ![](images/ssh.png)
 
 **2.6 Autoscale manually in the Azure Portal based on date/time**
-1. Go back to the **Portal** and go to **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
+1. Go back to the **portal** and go to the **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
 
 2. Click the **Custom Autoscale**, and note all the options you have.
 

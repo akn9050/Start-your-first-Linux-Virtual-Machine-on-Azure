@@ -24,7 +24,6 @@
 ``
 "Standard_DS2_v2", "Standard_DS1_v2", "Standard_B1ls1", "Standard_B1s", "Standard_B1ms", "Standard_B2s", "Standard_B2ms", "Standard_B4ms", "Standard_B8ms", "Standard_E16-4s_v3", "Standard_E2s_v3", "Standard_E4-2s_v3", "Standard_E4s_v3", "Standard_E8-2s_v3", "Standard_E8-4s_v3", "E16-4s_v3", "E16-8s_v3".
 ``
-
 <img src="images/vmname.png"/><br/>
 4. Under **Administrator account** select **SSH Public Key** for authentication type. Provide **User Name** and paste your **Public key**.<br/>
 <img src="images/sshselcet.png"/><br/>
@@ -52,13 +51,10 @@
 ``
 
 <img src="images/logout.png "/><br/>
-
-### 1.4 Reset Password of Virtual Machine
+### 1.4 Reset Password of Virtual Machine<br/>
 1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>
 <img src="images/resetp.png "/><br/>
-
-### 1.5 Access Serial Console of Virtual Machine
-
+### 1.5 Access Serial Console of Virtual Machine<br/>
 1. For using serial console of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Serial Console**.<br/>
 <img src="images/serialconsole.png "/><br/>
 2. Select power botton to **Restrat** or **Rest** the virtual machine.

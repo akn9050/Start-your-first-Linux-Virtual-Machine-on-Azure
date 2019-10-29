@@ -27,7 +27,7 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/ubuntunew.png)
    
-2. In the basics tab under the **Project details**, make sure the correct **Subscription** is selected and then choose your ** Resource group** name **linux-empty-uniqeID.
+2. In the basics tab under the **Project details**, make sure the correct **Subscription** is selected and then choose your ** Resource group** name **linux-empty-unique-id**.
 
    ![](images/suscription.png)
    

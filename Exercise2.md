@@ -97,7 +97,7 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, Let us revi
 
 
 
-### 2.4 Use autoscale rules on your VM scale set
+### 2.3 Use autoscale rules on your VM scale set
 An Azure virtual machine scale set can automatically increase or decrease the number of VM instances that run your application.You create rules that define the acceptable performance for a positive customer experience. When those defined thresholds are met, autoscale rules take action to adjust the capacity of your scale set. You can also schedule events to automatically increase or decrease the capacity of your scale set at fixed times. Let us review the auto-scale settings for your VMSS.
 
 1.Go to the **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.
@@ -107,7 +107,7 @@ An Azure virtual machine scale set can automatically increase or decrease the nu
    ![](images/autoscalerule.png)
 
 
-### 2.5 Autoscale via the deployed web application
+### 2.4 Autoscale via the deployed web application
 In this exercise, We'll try to generate load on our newly create application hosted on VMSS. Let's get started.
 
 1.Go back to the **Overview** section for your scale set.
@@ -131,7 +131,7 @@ In this exercise, We'll try to generate load on our newly create application hos
    ![](images/sshvmss.png)
 
 
-### 2.6 Autoscale manually in the Azure Portal based on date/time
+### 2.5 Autoscale manually in the Azure Portal based on date/time
 
 1.In the **Azure Portal** and go to the **Scaling**, and let's try out creating a scheduled autoscale rule. (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
 
@@ -153,7 +153,7 @@ In this exercise, We'll try to generate load on our newly create application hos
      ![](images/autorule.png)
 
 
-### 2.7 Additional Autoscale documentation and information
+### 2.6 Additional Autoscale documentation and information
 
   * See the docs here for more info on autoscale rules:
      - https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview 
@@ -169,7 +169,7 @@ Automatically scale out the number of VM instances at the start of the workday w
     > Note: You can combine multiple scale-out and scale-in conditions.
 
 
-### 2.8 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)
+### 2.7 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)
 
 1.To add a password to your VMSS go to the **Reset Password**.
 

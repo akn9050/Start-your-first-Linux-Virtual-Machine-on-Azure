@@ -130,12 +130,9 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
 
 **Autoscale documentation and information**
 
-  * See the docs here for more info on autoscale rules: 
-  
-    https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview
-     
-  https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-portal
-
+  * See the docs here for more info on autoscale rules:
+     - https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview 
+     - https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-portal
   * The following examples are scenarios that may benefit the use of schedule-based autoscale rules:
 
 Automatically scale out the number of VM instances at the start of the work day when customer demand increases. At the end of the work day, automatically scale in the number of VM instances to minimize resource costs overnight when application use is low.

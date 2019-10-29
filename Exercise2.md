@@ -1,4 +1,4 @@
-# Exercise 2: Deploy VM Scale Set
+# Exercise 2: Deploy an Azure Virtual Machine Scale Set
 Duration: 45 Minutes
 
 A VM scale set (VMSS) is a way to deploy several similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. In last exercise, we used the **Azure Portal** to create a VM, so let's use the Azure CLI and ARM Template to deploy a VMSS and an app to it. 

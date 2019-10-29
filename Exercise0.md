@@ -1,6 +1,6 @@
-# Exercise 0: Log into your Azure Portal and Verify access to the Lab Resources
+# Exercise 0: Login into your Azure Portal and Verify access to the Lab Resources
 
-In this exercise, you will log into the **Azure portal** using your lab Azure credentials and you will verify acess to lab resources.
+In this exercise, you will login into the **Azure portal** using your lab Azure credentials and you will verify acess to lab resources.
 
 
 ### Login to Azure Portal 

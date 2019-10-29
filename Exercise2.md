@@ -38,7 +38,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
    ```az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
    ```
 
-  ![](images/deployed.png")
+  ![](images/deployed.png)
    
 **Deployment notes to read through while you wait (what did I just do?)**
 

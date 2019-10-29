@@ -108,8 +108,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
  
    ![](images/ssh.png)
 
-**Autoscale manually in the Azure Portal based on date/time**
-
+**2.5 Autoscale manually in the Azure Portal based on date/time**
 1. Go back to the **Portal** and go to **Scaling**, and let's try out creating a scheduled autoscale rule (https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview#scheduled-autoscale)
 
 2. Click **Custom Autoscale**, and note all the options you have.
@@ -146,7 +145,7 @@ Automatically scale out the number of VM instances at the start of the work day 
    
     > Note: You can combine multiple scale-out and scale-in conditions.
 
-**2.5 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
+**2.6 Bonus section (optional): configure your VMSS for serial console (10-15 extra minutes)**
 
 1. For add a password to your VMSS goto the **Reset Password**.
 

@@ -8,7 +8,7 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
 
    ![](images/azureclisign.png)
    
-2. Select the **BASH** from the drop-down in the cloud shell window.
+2. Select **BASH** from the drop-down in the cloud shell window.
 
 #### 2.2 Create a Scale Set
 

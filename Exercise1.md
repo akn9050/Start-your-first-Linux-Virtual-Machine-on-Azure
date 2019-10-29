@@ -1,25 +1,25 @@
 # Exercise 1: Create your first Linux VM (10 minutes)
 
-**1.1 SSH Key Genration**
+**1.1 SSH Key Generation**
 
 In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtual Machine
 1. Select the **Cloud Shell** from the upper right corner of the Azure Portal.
 
    ![](images/azureclisign.png)
    
-2. Select **BASH** in cloud shell window.
+2. Select **BASH** in the cloud shell window.
 3. Select **Show advance setting**.
-4. Create a storage account for Bash, provide unique name for **Storage Account**, **File share** and select the **Cloud Shell region** as **East US** then click on **Create Storage**.
+4. Create a storage account for Bash, provide a unique name for **Storage Account**, **File share** and select the **Cloud Shell region** as **East US** then click on **Create Storage**.
 
    ![](images/bashst.png)
 
-5. Type **ssh-keygen -t rsa -b 2048** to genrate the ssh key.
+5. Type **ssh-keygen -t rsa -b 2048** to generate the ssh key.
 
    ![](images/sshkeygen.png)
 
 6. You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location, listed in brackets.
 7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.
-8. To display your public key run **cat /home/odl_user/.ssh/id_rsa.pub**. Copy the contents of public key for further step.
+8. To display your public key run **cat /home/odl_user/.ssh/id_rsa.pub**. Copy the contents of the public key for further steps.
 
 **1.2 Create Ubuntu VM from Azure Portal**
 
@@ -27,7 +27,7 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/ubuntunew.png)
    
-2. In the basics tab under **Project details**, make sure the correct **Subscription** is selected and then choose your **Resource  group**.
+2. In the basics tab under **Project details**, make sure the correct **Subscription** is selected and then choose your ** Resource group**.
 
    ![](images/suscription.png)
    
@@ -49,7 +49,7 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/validation.png)
    
-7.After some time you can see that your virtual machine successfully deployed.
+7. After some time you can see that your virtual machine successfully deployed.
 
    ![](images/overview.png)
 
@@ -76,7 +76,7 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
 ### 1.4 Reset Password of Virtual Machine
 
-1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.
+1. For reset the password of the Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.
 
    ![](images/resetp.png)
 
@@ -86,4 +86,4 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/serialconsole.png)
 
-2. Select power  button to **Restar** or **Rest** the virtual machine.
+2. Select the power button to **Restart** or **Rest** the virtual machine.

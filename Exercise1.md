@@ -9,7 +9,7 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
    ![](images/azureclisign.png)
    
 2. Select the **BASH** in the cloud shell window.
-3. Select the **Show advance setting**.
+3. Select the **Show advance settings**.
 4. Create a storage account for **Cloud Shell**, provide a unique name for **Storage Account**, **File share** and select the **Cloud Shell region** as **East US** then click on **Create Storage**. Please note that you've to chhose existing resource group to create this, Since the lab environment doesn't allow you to create new resource groups. 
 
    ![](images/bashst.png)
@@ -33,7 +33,7 @@ In this exercise, You'll be creating a Ubuntu Virtual machine on Azure.
 
    ![](images/suscription.png)
    
-3. Under the **Instance details**, type the **Virtual Machine Name** , choose your **Region**, select **Ubuntu Server 18.04 LTS** image and select the virtual machine **size** as **Standard_DS1_v2**. Please note all VM Size's are not allowed in the lab environment, Please ensure to chhose the defined VM Size Only. 
+3. Under the **Instance details**, Enter the **Virtual Machine Name** , choose your **Region**, select **Ubuntu Server 18.04 LTS** image and select the virtual machine **size** as **Standard_DS1_v2**. Please note all VM Size's are not allowed in the lab environment, Please ensure to chhose the defined VM Size Only. 
 
    
    ![](images/vmname.png)
@@ -59,7 +59,7 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
 
        az vm show -d -g linux-empty-XXXX -n <VM name>  --query publicIps -o tsv
 
-2. Run following command to connect to your virtual machine. 
+2. Run following command to connect to your virtual machine remotely using SSH.  
    > x.x.x.x : Replace this with your virtual machine **Public IP**.
    > Run **cd /home/odl_user/.ssh/** to find your private key name
 

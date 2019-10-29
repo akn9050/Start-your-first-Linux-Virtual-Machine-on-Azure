@@ -1,7 +1,5 @@
-# Exercise 1: Create your first Linux VM (10 minutes)
-
-**1.1 SSH Key Genration**
-
+# Exercise 1: Create your first Linux VM (10 minutes)<br/>
+**1.1 SSH Key Genration**<br/>
 1. Select the **Cloud Shell** from the upper right corner of the Azure Portal.<br/>
 <img src="images/azureclisign.png"/><br/>
 2. Select **BASH** in cloud shell window.<br/>
@@ -13,9 +11,7 @@
 6. You will be prompted to enter a file in which to save the key pair. Just press Enter to save in the default location, listed in brackets.<br/>
 7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.<br/>
 8. To display public key run **cat /home/odl_user/public(your public key name)**. Copy the content of public key for further step.<br/>
-
-**1.2 Create Ubuntu VM from Azure Portal**
-
+**1.2 Create Ubuntu VM from Azure Portal**<br/>
 1. Click on **Create a resource** in the upper left corner of the Azure portal and select **Ubuntu Server 18.04 LTS**.<br/>
 <img src="images/ubuntunew.png"/><br/>
 2. In the basics tab under **Project details**, make sure the correct **Subscription** is selected and then choose your **Resource  group**.<br/>
@@ -34,9 +30,7 @@
 <img src="images/validation.png"/> <br/>     
 8. After sometime you can see that your virtual machine successfully deployed.<br/>
 <img src="images/overview.png"/><br>
-
-### 1.3 SSH to VM using Public IP
-
+### 1.3 SSH to VM using Public IP<br/>
 1. To display you virtual machine **Public IP** run below command.<br/>
 ``az vm show -d -g ODL-linux-XXXX -n <VM name>  --query publicIps -o tsv
 ``
@@ -44,12 +38,10 @@
 * x.x.x.x :- Replace this with your virtual machine **Public IP**.<br/>
 ``ssh -i <private key name> azureuser@x.x.x.x -p 22
 ``
-
 <img src="images/connect.png "/><br/>
 3. Run this command to logout from ubuntu machine<br/>
 ``logout
 ``
-
 <img src="images/logout.png "/><br/>
 ### 1.4 Reset Password of Virtual Machine<br/>
 1. For using reset password of Ubuntu virtual machine navigate to the **Resource Group->Virtual Machine->Overview->Support + Troubleshooting->Reset Password**.<br/>

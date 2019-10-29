@@ -103,7 +103,7 @@ An Azure virtual machine scale set can automatically increase or decrease the nu
 
 2.The VMSS will scale automatically based on load  measured by CPU Utilization % of the VMSS Instances. Currently it's set increase the VMSS by 1 instance if the CPU utilization goes beyond 60% and decrease by 1 instance if CPU utilization goes lower than 60%. Additionally, there're minimum and maximum number of instances defined.  
 
-   ![](autoscalerule.png)
+   ![](images/autoscalerule.png)
 
 
 ### 2.5 Autoscale via the deployed web application

@@ -2,7 +2,7 @@
 
 In this exercise, you will log into the **Azure Portal** using your Azure credentials and you will verify the type of role you are assigned in this Subscription.
 
-1. Click on Environment Details Tab on this Page to view your Azure Lab credentials details. Use these deatils to login into the Azure portal.
+1. Click on Environment Details Tab on this Page to view your Azure Lab credentials details. Use these details to login into the Azure portal.
 
    ![](images/azurelogincredentials.png)
 

@@ -1,6 +1,6 @@
 # Exercise 2: Deploy VM Scale Set (15 minutes)
 
-A VM scale set (VMSS) is a way to deploy several similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. We have used the portal to create a VM, so let's use the Azure CLI to deploy a VMSS and an app to it.
+A VM scale set (VMSS) is a way to deploy several similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. We have used the portal to create a VM, so let's use the Azure CLI and ARM Template to deploy a VMSS and an app to it.
 
 #### 2.1 Launch Cloud Shell
 
@@ -18,18 +18,21 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
 
    ![](images/github.png)
    
-2. To display the repo contents use below command:-
+2. Run following command to change the present directory to newly cloned repository. Run **ls** to review the content of the repository. 
   
        cd Ignite2019VMSS-HOL
        
    ![](images/gitcontent.png)
    
 3. Edit your **azuredeploy.parameters.json**.
+      
+      code azuredeploy.parameters.json
+
 
    ![](images/editprameter.png)
    
    > Note vmssNmae: Give unipe name for your VM scale set.
-   > adminSshKey: Paste your **Public key**.
+   > adminSshKey: Paste your **Public key** created earlier. 
    
 4. Now, create the deployment by running below command and select your **Resource group** name **linux-empty-unique-id** and wait for the deployment to finish.
 

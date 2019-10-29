@@ -8,7 +8,7 @@ In this exercise, you will log into the **Azure portal** using your Azure creden
 
 ### Login to Azure Portal 
 
-1.**Navigate** to https://portal.azure.com and login using the credentials provided in the previous step. We'd recommend using an InPrivate browser window for this.
+1. **Navigate** to https://portal.azure.com and login using the credentials provided in the previous step. We'd recommend using an InPrivate browser window for this.
 
 2. **Enter** the **Username** and click on **Next**.
 

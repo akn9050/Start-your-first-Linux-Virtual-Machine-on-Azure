@@ -33,15 +33,13 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
    > Note vmssNmae: Give unipe name for vmss.
    > adminSshKey: Paste your **Public key**.
    
-4. Now, create the deployment by using your **Resource group** name **linux-empty-ODL-ID**.
+4. Now, create the deployment by running below command and select your **Resource group** name **linux-empty-unique-id** and wait for the deployment to finish.
 
-``az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
-``
+   ``'az group deployment create -g ODL-linux-XXXX -n <deployment name> --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
+   ```
 
-   ![](images/deployed.png")
+  ![](images/deployed.png")
    
-(Now, wait for the deployment to finish.)
-
 **Deployment notes to read through while you wait (what did I just do?)**
 
    * The files azuredeploy.json and azuredeploy.parameters.json are most relevant here.

@@ -131,6 +131,7 @@ A VM scale set (VMSS) is a way to deploy a number of similar VMs with a single c
 **Autoscale documentation and information**
 
   * See the docs here for more info on autoscale rules: 
+  
     https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview
      
   https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-portal

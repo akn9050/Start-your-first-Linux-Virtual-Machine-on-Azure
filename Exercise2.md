@@ -1,13 +1,13 @@
 # Exercise 2: Deploy an Azure Virtual Machine Scale Set
 Duration: 45 Minutes
 
-A VM scale set (VMSS) is a way to deploy several similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. In last exercise, we used the **Azure Portal** to create a VM, so let's use the Azure CLI and ARM Template to deploy a VMSS and an app to it. 
+A VM scale set (VMSS) is a way to deploy several similar VMs with a single command – you can use a scale set to deploy between 0 to 1000 VMs. Scale sets have built-in high availability and integrate with Azure auto-scale. In the last exercise, we used the **Azure Portal** to create a VM, so let's use the Azure CLI and ARM Template to deploy a VMSS and an app to it. 
 
 
 ### 2.1 Create a VM Scale Set
 In this exercise, You'll be creating a **Virtual Machine Scale Set** using the Azure Cloud Shell and ARM templates. Let's get started.
 
-1.Select the **Cloud Shell** icon from the upper right corner of the Azure Portal.
+1. Select the **Cloud Shell** icon from the upper right corner of the Azure Portal.
 
    ![](images/azureclisign.png)
    
@@ -19,13 +19,13 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using the A
 
    ![](images/github.png)
    
-4.Run following command to change the present directory to newly cloned repository. Run **ls** to review the content of the repository. 
+4.Run the following command to change the present directory to a newly cloned repository. Run **ls** to review the content of the repository. 
   
        cd Ignite2019VMSS-HOL
        
    ![](images/gitcontent.png)
    
-5.This repository contains the ARM template & Parameter file which will provision a Virtual Machine Scale set and deploy application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a seprate browser tab. 
+5.This repository contains the ARM template & Parameter file which will provision a Virtual Machine Scale set and deploy an application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a separate browser tab. 
    
 6.Now, You'll need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Run the following command to open the parameters file in Visual Studio code. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
       
@@ -39,7 +39,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using the A
    
 7.Save and Close the Code Editor once completed. 
 
-8.Now, let's create the deployment by running below command. Please ensure to use your existing **Resource group** named **linux-empty-XXXX** and wait for the deployment to finish. 
+8.Now, let's create the deployment by running the below command. Please ensure to use your existing **Resource group** named **linux-empty-XXXX** and wait for the deployment to finish. 
 
    ``az group deployment create -g linux-empty-XXXX --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
    ``
@@ -48,7 +48,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using the A
    
 **What did you just do**
 
-It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, Let us review what did we just do. 
+It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us review what did we just do. 
 
    * The files azuredeploy.json and azuredeploy.parameters.json are most relevant here.
 
@@ -98,27 +98,27 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, Let us revi
 
 
 ### 2.3 Use autoscale rules on your VM scale set
-An Azure virtual machine scale set can automatically increase or decrease the number of VM instances that run your application.You create rules that define the acceptable performance for a positive customer experience. When those defined thresholds are met, autoscale rules take action to adjust the capacity of your scale set. You can also schedule events to automatically increase or decrease the capacity of your scale set at fixed times. Let us review the auto-scale settings for your VMSS.
+An Azure virtual machine scale set can automatically increase or decrease the number of VM instances that run your application. You create rules that define the acceptable performance for positive customer experience. When those defined thresholds are met, autoscale rules take action to adjust the capacity of your scale set. You can also schedule events to automatically increase or decrease the capacity of your scale set at fixed times. Let us review the auto-scale settings for your VMSS.
 
 1.Go to the **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.
 
-2.The VMSS will scale automatically based on load  measured by CPU Utilization % of the VMSS Instances. Currently it's set increase the VMSS by 1 instance if the CPU utilization goes beyond 60% and decrease by 1 instance if CPU utilization goes lower than 60%. Additionally, there're minimum and maximum number of instances defined.  
+2.The VMSS will scale automatically based on load measured by CPU Utilization % of the VMSS Instances. Currently, it's set to increase the VMSS by 1 instance if the CPU utilization goes beyond 60% and decrease by 1 instance if CPU utilization goes lower than 60%. Additionally, there're minimum and maximum number of instances defined.  
 
    ![](images/autoscalerule.png)
 
 
 ### 2.4 Autoscale via the deployed web application
-In this exercise, We'll try to generate load on our newly create application hosted on VMSS. Let's get started.
+In this exercise, We'll try to generate load on our newly created application hosted on VMSS. Let's get started.
 
 1.Go back to the **Overview** section for your scale set.
 
-2.Copy the **Public IP address**, open a new tab in browser and paste the public ip address with port number 9000 (**publicIpaddress:9000**). You will see a landing page that looks like:
+2.Copy the **Public IP address**, open a new tab in the browser and paste the public ip address with port number 9000 (**publicIpaddress:9000**). You will see a landing page that looks like:
    
    ![](images/output.png)
    
 3.To view the autoscale in action, simply click the **Start work** on the page.
 
-4.Then, go back to the VM scale set in the Azure portal and watch its CPU rise once CPU Utlization is higher than 60%, a new scale set instance will automatically be created.
+4.Then, go back to the VM scale set in the Azure portal and watch its CPU rise once CPU Utilization is higher than 60%, a new scale set instance will automatically be created.
 
    ![](images/cpuutilization.png)
    

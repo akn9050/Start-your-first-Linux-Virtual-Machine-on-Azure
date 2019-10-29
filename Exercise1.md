@@ -1,5 +1,6 @@
 # Exercise 1: Create your first Linux VM (10 minutes)<br/>
-**1.1 SSH Key Genration**<br/>
+**1.1 Generate SSH Keys to use with Linux Virtual Machine**<br/>
+In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtual Machine
 1. Select the **Cloud Shell** from the upper right corner of the Azure Portal.
 
    ![](images/azureclisign.png)

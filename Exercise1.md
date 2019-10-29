@@ -1,5 +1,7 @@
-# Exercise 1: Create your first Linux VM (10 minutes)<br/>
-**1.1 Generate SSH Keys to use with Linux Virtual Machine**<br/>
+# Exercise 1: Create your first Linux VM (10 minutes)
+
+**1.1 Generate SSH Keys to use with Linux Virtual Machine**
+
 In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtual Machine
 1. Select the **Cloud Shell** from the upper right corner of the Azure Portal.
 
@@ -19,7 +21,8 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 7. You will be asked to enter a passphrase. You can type a passphrase for your SSH key or press Enter to continue without a passphrase.
 8. To display public key run **cat /home/odl_user/public(your public key name)**. Copy the content of public key for further step.
 
-**1.2 Create Ubuntu VM from Azure Portal** <br/>
+**1.2 Create Ubuntu VM from Azure Portal**
+
 1. Click on **Create a resource** in the upper left corner of the Azure portal and select **Ubuntu Server 18.04 LTS**.
 
    ![](images/ubuntunew.png)
@@ -44,7 +47,8 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/portssh.png)
 
-6. Leave the remaining options defaults and then select the **Review + create** button at the bottom of the page.<br/>
+6. Leave the remaining options defaults and then select the **Review + create** button at the bottom of the page.
+
 7. On the Create a **Virtual Machine Page**, you can see the details about the VM you are about to create. When you are ready, select **Create**.
 
    ![](images/validation.png)
@@ -53,7 +57,8 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/overview.png)
 
-### 1.3 SSH to VM using Public IP<br/>
+### 1.3 SSH to VM using Public IP
+
 1. To display you virtual machine **Public IP** run below command.
 
        az vm show -d -g ODL-linux-XXXX -n <VM name>  --query publicIps -o tsv
@@ -84,4 +89,4 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/serialconsole.png)
 
-2. Select power botton to **Restrat** or **Rest** the virtual machine.
+2. Select power  button to **Restar** or **Rest** the virtual machine.

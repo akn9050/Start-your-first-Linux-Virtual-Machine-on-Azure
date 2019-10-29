@@ -7,8 +7,8 @@ In this exercise, We'll be generating SSH Keys to authenticate with Linux Virtua
 
    ![](images/azureclisign.png)
    
-2. Select **BASH** in the cloud shell window.
-3. Select **Show advance setting**.
+2. Select the **BASH** in the cloud shell window.
+3. Select the **Show advance setting**.
 4. Create a storage account for Bash, provide a unique name for **Storage Account**, **File share** and select the **Cloud Shell region** as **East US** then click on **Create Storage**.
 
    ![](images/bashst.png)

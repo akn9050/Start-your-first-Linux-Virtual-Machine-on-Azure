@@ -28,7 +28,7 @@ In this exercise, you will login to the **Azure portal** using your lab Azure cr
 
 * linux-completed-UNIQUEID: This resource group is having a pre-created Virtual Machine Scale Set. You can use this to perform lab exercise without provisioning a new VM Scale Set. 
 
-   ![](images/linux2.png)
+  ![](images/linux2.png)
 
    
 7.Click **Next** on the bottom right of this page.

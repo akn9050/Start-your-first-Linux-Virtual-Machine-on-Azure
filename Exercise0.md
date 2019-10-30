@@ -10,7 +10,7 @@ In this exercise, you will login to the **Azure portal** using your lab Azure cr
    ![](images/azureportal.png)
 
 
-2.Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**. 
+2.Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**.  Please use right click > **copy** to copy the username and paste inside the browser. You should allow **clipboard access** when asked by the browser. 
 
 3.In next step, use **<inject key="AzureAdUserPassword"></inject>** as **Password**  and Click **Sign In**
 

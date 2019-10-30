@@ -5,7 +5,7 @@ In this exercise, you will login to the **Azure portal** using your lab Azure cr
 
 ### Login to Azure Portal 
 
-1.Launch Azure Portal(https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. Please cancel any browse first launch popup's. 
+1.Launch Azure Portal(https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You'd be asked to choose default browser configurations, You can skip those for now by clicking cancel. 
 
    ![](images/azureportal.png)
 

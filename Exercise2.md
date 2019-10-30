@@ -186,6 +186,6 @@ Automatically scale out the number of VM instances at the start of the workday w
 
    ![](images/7.png)
 
-Congratulations!
-Now we have the VM and VMSS up and running!
+#### Congratulations! 
+#### Now we have the VM and VMSS up and running!
 #### This concludes the lab. 

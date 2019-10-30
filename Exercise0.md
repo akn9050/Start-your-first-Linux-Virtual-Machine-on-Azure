@@ -5,7 +5,10 @@ In this exercise, you will login to the **Azure portal** using your lab Azure cr
 
 ### Login to Azure Portal 
 
-1.Navigate to https://portal.azure.com, It is recommended to use a Private/Incognito browser instance to avoid any conflict with your other Azure Accounts. 
+1.Launch Azure Portal(https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. Please cancel any browse first launch popup's. 
+
+   ![](images/azureportal.png)
+
 
 2.Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**. 
 

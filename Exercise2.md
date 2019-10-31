@@ -13,41 +13,41 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using the A
    
 2.Select **Bash** once prompted to start the **cloud shell**.
 
-3.Clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL to your **cloud shell** by running following command:
+3.Clone this repo: https://github.com/asinn826/Ignite2019VMSS-HOL to your **cloud shell** by running the following command:
 
        git clone https://github.com/asinn826/Ignite2019VMSS-HOL
 
    ![](images/github.png)
    
-4.Run the following command to change the present directory to a newly cloned repository. Run **ls** to review the content of the repository. 
+4.Run the following command to change the present directory to a newly cloned repository. Run **ls** command to review the contents of the repository. 
   
        cd Ignite2019VMSS-HOL
        ls
        
    ![](images/gitcontent.png)
    
-5.This repository contains the ARM template & parameter file which will provision a Virtual Machine Scale set and deploy an application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a separate browser tab. 
+5.This repository contains the ARM template and Parameter file which will provision a Virtual Machine Scale set and deploy an application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a separate browser tab. 
    
-6.Now, you'll need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Run the following command to open the parameters file in **visual studio code**. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
+6.Now, you'll need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Run the following command to open the parameters file in the **visual studio code**. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
       
        code azuredeploy.parameters.json
        
    > vmssName: Give a unique name for your VM scale set.
    
-   > adminSshKey: Paste your **Public key** created during first exercise. 
+   > adminSshKey: Paste your **Public key** created during the first exercise. 
 
    ![](images/editprameter.png)
    
 7.Save and close the **code editor** once the values are replaced. 
 
-8.Now, let's create the deployment by running the below command. Please ensure to use your existing **resource group** named **linux-empty-XXXX** and wait for the deployment to finish. 
+8.Now, let's create the deployment by running the below command. Please ensure to use your existing **resource group** named as **linux-empty-XXXX** and wait for the deployment to finish. 
 
    ``az group deployment create -g linux-empty-XXXX --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
    ``
 
    ![](images/deployed.png)
    
-**What did you just do**
+**What did you just do ?**
 
 It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us review what did we just do. 
 

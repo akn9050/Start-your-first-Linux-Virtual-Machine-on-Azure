@@ -30,7 +30,8 @@ In this exercise, you will login to the **Azure portal** using your lab Azure cr
 
   ![](images/linux2.png)
 
-   
-7.Click **Next** on the bottom right of this page.
+7.Please note that you do not have rights to create new resource groups in the lab environment. Please use the pre-created resource group named **linux-empty-UNIQUEID** for provisioning all resources during upcoming exercises.  
+
+8.Click **Next** on the bottom right of this page.
 
 

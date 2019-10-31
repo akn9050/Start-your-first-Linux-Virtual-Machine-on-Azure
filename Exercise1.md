@@ -3,7 +3,7 @@ Duration: 20 Minutes
 
 ### 1.1 Generate SSH Keys for Linux VM Authentication
 
-In this exercise, We'll be generating SSH Keys which will be used to authenticate with Linux Virtual Machines. 
+In this exercise, We will be generating SSH Keys which will be used to authenticate with Linux Virtual Machines. 
 
 1.Select  **Cloud Shell** from the upper right corner of the Azure Portal.
 
@@ -15,7 +15,7 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
 
   <kbd> ![](images/linux3.png) </kbd>
 
-4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please note that you've to choose an existing resource group named **linux-empty-XXXX** to create this since the lab environment doesn't allow you to create new resource groups. 
+4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please choose the existing resource group named **linux-empty-XXXX** by selecting existing resource group button. 
 
    ![](images/newstorage.png)
 

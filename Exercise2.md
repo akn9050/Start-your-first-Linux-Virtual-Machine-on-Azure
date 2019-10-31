@@ -49,7 +49,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using the A
    
 **What did you just do ?**
 
-It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us review what did we just do. 
+It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us review what did you just do. 
 
    * The files azuredeploy.json and azuredeploy.parameters.json are most relevant here.
 
@@ -57,7 +57,7 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us revi
 
    * VM scale sets are great for scaling out applications – for example, if you are running a workload and you anticipate a spike in holiday-related traffic, the VMSS can scale-out automatically to meet your compute needs, and scale back in when traffic subsides.
    
-   * The template deployed the VMSS using a Red Hat Enterprise Linux (RHEL) image, one of the many available images in the Azure Marketplace.
+   * The template deployed the VMSS using the Red Hat Enterprise Linux (RHEL) image, one of the many available images in the Azure Marketplace.
    
    * The template also used cloud-init to deploy a simple web application onto the VM. The cloud-init script runs once, at the beginning of the deployment, to configure the VM to its desired end state.
    
@@ -79,7 +79,7 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us revi
 
 **Note: What is upgrading?**
 
-   * VM scale sets work on a model basis - there is a model that the scale set follows, and all VMs within the scale set has the same configuration as defined in the model.
+   * VM scale sets work on a model basis - there is a model that the scale set follows, and all VMs within the scale set has the same configurations as defined in the model.
 
    * If the model changes, you will need to upgrade the instance(s) to the latest model - hence the upgrade button in the UI (you can also configure scale sets to automatically upgrade when the model changes).
 
@@ -95,8 +95,6 @@ It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us revi
  
    * Note that none of these were configured initially in your VM scale set, so you will need to upgrade the scale set model and then update individual instances to use them
    * There is a bonus section to this lab where you can try this for yourself
-
-
 
 ### 2.3 Use autoscale rules on your VM scale set
 An Azure virtual machine scale set can automatically increase or decrease the number of VM instances that run your application. You create rules that define the acceptable performance for positive customer experience. When those defined thresholds are met, autoscale rules take action to adjust the capacity of your scale set. You can also schedule events to automatically increase or decrease the capacity of your scale set at fixed times. Let us review the auto-scale settings for your VMSS.
@@ -178,7 +176,7 @@ Automatically scale out the number of VM instances at the start of the workday w
 
    ![](images/resetscalinstances.png)
    
-3.Open up the **Serial Console** in your VMSS instance and get the boot diagnostics error.
+3.Open up the **Serial Console** in your VMSS instance and you get the boot diagnostics error.
 
    ![](images/6.png)
    

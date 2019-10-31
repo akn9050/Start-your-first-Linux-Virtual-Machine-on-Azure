@@ -11,7 +11,7 @@ In this exercise, We'll be generating SSH Keys which will be used to authenticat
    
 2.Select **Bash** in the cloud shell window.
 
-3.Select **Show advance settings**. 
+3.Select **Show advanced settings**. 
 
   <kbd> ![](images/linux3.png) </kbd>
 

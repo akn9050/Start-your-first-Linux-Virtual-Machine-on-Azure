@@ -149,7 +149,7 @@ In this exercise, we'll try to generate load on our newly created application ho
    - **Start date**: Enter time of 2 minutes from now to test the scheduler.
    - **End date**: Enter time of 10 minutes from now to test the scheduler.
 
-     ![](images/autorule.png)
+   ![](images/autorule.png)
 
 
 ### 2.6 Additional Autoscale documentation and information

@@ -15,7 +15,7 @@ In this exercise, We will be generating SSH Keys which will be used to authentic
 
   <kbd> ![](images/linux3.png) </kbd>
 
-4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please choose the existing resource group named **linux-empty-XXXX** by selecting existing resource group button. 
+4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please choose the existing resource group named **linux-empty-XXXX** by selecting **use existing** resource group button. 
 
    ![](images/newstorage.png)
 

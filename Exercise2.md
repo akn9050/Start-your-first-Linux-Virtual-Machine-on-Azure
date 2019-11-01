@@ -5,7 +5,7 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
 
 
 ### 2.1 Create a VM Scale Set
-In this exercise, You'll be creating a **Virtual Machine Scale Set** using the Azure Cloud Shell and ARM templates. Let's get started.
+In this exercise, You will be creating a **Virtual Machine Scale Set** using the Azure Cloud Shell and ARM templates. Let's get started.
 
 1. Select the **cloud shell** icon from the upper right corner of the Azure Portal.
 
@@ -28,7 +28,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using the A
    
 5. This repository contains the ARM template and Parameter file which will provision a Virtual Machine Scale set and deploy an application on it. You can review by template files by browsing https://github.com/asinn826/Ignite2019VMSS-HOL in a separate browser tab. 
    
-6. Now, you'll need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Run the following command to open the parameters file in the **visual studio code**. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
+6. Now, you will need to edit the **azuredeploy.parameters.json** to provide your deployment specific values. Run the following command to open the parameters file in the **visual studio code**. Please ensure to modify the **vmssName** and **adminSshKey** values in the parameters file. 
       
        code azuredeploy.parameters.json
        
@@ -49,7 +49,7 @@ In this exercise, You'll be creating a **Virtual Machine Scale Set** using the A
    
 **What did you just do ?**
 
-It'll take 5 to 7 minutes for the deployment to complete. Meanwhile, let us review what did you just do. 
+It will take 5 to 7 minutes for the deployment to complete. Meanwhile, let us review what did you just do. 
 
    * The files azuredeploy.json and azuredeploy.parameters.json are most relevant here.
 
@@ -101,13 +101,13 @@ An Azure virtual machine scale set can automatically increase or decrease the nu
 
 1. Go to the **Scaling** in the VMSS. Currently, the VMSS is set to automatic scaling.
 
-2. The VMSS will scale automatically based on load measured by CPU Utilization % of the VMSS Instances. Currently, it's set to increase the VMSS by 1 instance if the CPU utilization goes beyond 60% and decrease by 1 instance if CPU utilization goes lower than 30%. Additionally, there're minimum and maximum number of instances defined.  
+2. The VMSS will scale automatically based on load measured by CPU Utilization % of the VMSS Instances. Currently, it's set to increase the VMSS by 1 instance if the CPU utilization goes beyond 60% and decrease by 1 instance if CPU utilization goes lower than 30%. Additionally, there are minimum and maximum number of instances defined.  
 
    ![](images/autoscalerule.png)
 
 
 ### 2.4 Autoscale via the deployed web application
-In this exercise, we'll try to generate load on our newly created application hosted on VMSS. Let's get started.
+In this exercise, we will try to generate load on our newly created application hosted on VMSS. Let's get started.
 
 1. Go back to the **Overview** section for your scale set.
 

@@ -5,7 +5,7 @@ A VM scale set (VMSS) is a way to deploy several similar VMs with a single comma
 
 
 ### 2.1 Create a VM Scale Set
-In this exercise, You will be creating a **Virtual Machine Scale Set** using the Azure Cloud Shell and ARM templates. Let's get started.
+In this exercise, You will be creating a **Virtual Machine Scale Set** using the Azure Cloud Shell and ARM templates. Let get started.
 
 1. Select the **cloud shell** icon from the upper right corner of the Azure Portal.
 
@@ -40,7 +40,7 @@ In this exercise, You will be creating a **Virtual Machine Scale Set** using the
    
 7. Save and close the **code editor** once the values are replaced. 
 
-8. Now, let's create the deployment by running the below command. Please ensure to use your existing **resource group** named as **linux-empty-XXXX** and wait for the deployment to finish. 
+8. Now, let create the deployment by running the below command. Please ensure to use your existing **resource group** named as **linux-empty-XXXX** and wait for the deployment to finish. 
 
    ``az group deployment create -g linux-empty-XXXX --template-file azuredeploy.json --parameters azuredeploy.parameters.json 
    ``

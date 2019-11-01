@@ -5,78 +5,78 @@ Duration: 20 Minutes
 
 In this exercise, We will be generating SSH Keys which will be used to authenticate with Linux Virtual Machines. 
 
-1.Select  **Cloud Shell** from the upper right corner of the Azure Portal.
+1. Select  **Cloud Shell** from the upper right corner of the Azure Portal.
 
    ![](images/azureclisign.png)
    
-2.Select **Bash** in the cloud shell window.
+2. Select **Bash** in the cloud shell window.
 
-3.Select **Show advanced settings**. 
+3. Select **Show advanced settings**. 
 
   <kbd> ![](images/linux3.png) </kbd>
 
-4.In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please choose the existing resource group named **linux-empty-XXXX** by selecting **use existing** resource group button. 
+4. In this step, You'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account**, **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please choose the existing resource group named **linux-empty-XXXX** by selecting **use existing** resource group button. 
 
    ![](images/newstorage.png)
 
-5.Once your cloud shell is ready, run **ssh-keygen -t rsa -b 2048** command to generate the ssh key.
+5. Once your cloud shell is ready, run **ssh-keygen -t rsa -b 2048** command to generate the ssh key.
 
-6.You will be prompted to enter a file name to save the key pair. Just press Enter to save with default settings i.e **/home/odl_user/.ssh/id_rsa**.
+6. You will be prompted to enter a file name to save the key pair. Just press Enter to save with default settings i.e **/home/odl_user/.ssh/id_rsa**.
 
-7.You will be asked to enter a passphrase to secure the ssh keys, Please press **enter** twice to continue without a passphrase.
+7. You will be asked to enter a passphrase to secure the ssh keys, Please press **enter** twice to continue without a passphrase.
 
    ![](images/newssh.png)
 
-8.You'll be using the public key while creating the virtual machines, run  **cat /home/odl_user/.ssh/id_rsa.pub** command to view your public key. Please copy the entire content of the public key and save in a notepad file for further reference. 
+8. You'll be using the public key while creating the virtual machines, run  **cat /home/odl_user/.ssh/id_rsa.pub** command to view your public key. Please copy the entire content of the public key and save in a notepad file for further reference. 
 
 ### 1.2 Create the Ubuntu VM from Azure Portal
 In this exercise, You'll be creating an **Ubuntu** virtual machine using Azure Portal. Let's get started.
 
-1.Click on the **Create a resource** in the upper left corner of the Azure portal and select the  **Ubuntu Server 18.04 LTS**.
+1. Click on the **Create a resource** in the upper left corner of the Azure portal and select the  **Ubuntu Server 18.04 LTS**.
 
    ![](images/ubuntunew.png)
    
-2.In the basics tab under the **Virtual Machine Details**, make sure the existing **Subscription** and existing  **Resource group** named **linux-empty-XXXX** is selected
+2. In the basics tab under the **Virtual Machine Details**, make sure the existing **Subscription** and existing  **Resource group** named **linux-empty-XXXX** is selected
 
    ![](images/suscription.png)
    
-3.Under the **Instance details**, Enter the **Virtual Machine Name** of your choice, choose your **Region**, select **Ubuntu Server 18.04 LTS** image and select the virtual machine **size** as **Standard D2s v3**. Please note all VM sizes are not allowed in the lab environment, Please ensure to choose the defined VM size only.
+3. Under the **Instance details**, Enter the **Virtual Machine Name** of your choice, choose your **Region**, select **Ubuntu Server 18.04 LTS** image and select the virtual machine **size** as **Standard D2s v3**. Please note all VM sizes are not allowed in the lab environment, Please ensure to choose the defined VM size only.
    
    ![](images/vmname.png)
    
-4.Under the **Administrator account** select the **SSH public key** for authentication type. Provide the **Username** of your choice and paste your **SSH public key** copied earlier from **cloud shell**.
+4. Under the **Administrator account** select the **SSH public key** for authentication type. Provide the **Username** of your choice and paste your **SSH public key** copied earlier from **cloud shell**.
 
    ![](images/sshselcet.png)
 
-5.Leave the remaining options default and then select the **Review + create** button at the bottom of the page.
+5. Leave the remaining options default and then select the **Review + create** button at the bottom of the page.
 
-6.On the **Create a Virtual Machine Page**, you can review all configurations of the VM you are about to create. When you are ready, select **Create**.
+6. On the **Create a Virtual Machine Page**, you can review all configurations of the VM you are about to create. When you are ready, select **Create**.
 
    ![](images/validation.png)
    
-7.It'll take about 2 to 4 minutes for the VM to be deployed, Once deployed, You can review the Virtual Machine details on the overview page. 
+7. It'll take about 2 to 4 minutes for the VM to be deployed, Once deployed, You can review the Virtual Machine details on the overview page. 
 
    ![](images/overview.png)
    
    
-8.You've now successfully created a **Ubuntu Virtual Machine** on Azure. 
+8. You've now successfully created a **Ubuntu Virtual Machine** on Azure. 
 
 ### 1.3 SSH to VM using Public IP
 
 In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlier through SSH. We'll be using **Cloud Shell** for this.
 
-1.Launch **Cloud Shell** if not running already and run following command to list down the VMs running in your lab environment.
+1. Launch **Cloud Shell** if not running already and run following command to list down the VMs running in your lab environment.
 
        az vm list -o table
        
    
    ![](images/linux4.png)
    
-2.Now, let's find out the public IP of your recently created Virtual Machine. Execute the following command in **cloud shell**, Please ensure to replace the resource group name **linux-empty-XXXX** and **VM name** with your lab environment values, you can review those from the outputs of last step.
+2. Now, let's find out the public IP of your recently created Virtual Machine. Execute the following command in **cloud shell**, Please ensure to replace the resource group name **linux-empty-XXXX** and **VM name** with your lab environment values, you can review those from the outputs of last step.
 
        az vm show -d -g linux-empty-XXXX -n <VM name>  --query publicIps -o tsv
 
-2.Run the following command to connect to your virtual machine remotely using SSH. 
+2. Run the following command to connect to your virtual machine remotely using SSH. 
 
    > x.x.x.x : Replace this with your virtual machine's **public IP address**
 
@@ -86,11 +86,11 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
           
    ![](images/newsshvm.png)
     
-4.Type **yes** and hit enter when you're asked if you want to continue connecting to the virtual machine. 
+4. Type **yes** and hit enter when you're asked if you want to continue connecting to the virtual machine. 
 
 5.You're now connected to your linux virtual machine through SSH. 
     
-6.Run this command to logout from your ubuntu virtual machine.
+6. Run this command to logout from your ubuntu virtual machine.
 
        logout
 
@@ -99,17 +99,17 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
 ### 1.4 Reset Password of Virtual Machine
 Azure allows you to reset the password or ssh key for virtual machines using the Azure portal. Let's take a look at how to reset password or sshkeys for your Linux virtual machines. 
 
-1.To reset the password or sshkey of the Ubuntu virtual machine, Navigate to the **Resource Groups > Your Resource Group > Your Virtual Machine > Overview > Support + Troubleshooting >Reset Password**.
+1. To reset the password or sshkey of the Ubuntu virtual machine, Navigate to the **Resource Groups > Your Resource Group > Your Virtual Machine > Overview > Support + Troubleshooting >Reset Password**.
 
    ![](images/resetp.png)
 
 ### 1.5 Access Serial Console of Virtual Machine
 The serial console in the Azure portal provides access to a text-based console for linux virtual machines (VMs) and virtual machine scale set instances. This serial connection connects to the ttys0 serial port of the VM or virtual machine scale set instance, providing access to it independent of the network or operating system state. Let's take a look at how to access your Linux VMs using **serial console**. 
 
-1.To access the serial console of the Ubuntu virtual machine, Navigate to the **Resource Groups > Your Resource Group > Your Virtual Machine > Overview > Support + Troubleshooting > Serial Console**.
+1. To access the serial console of the Ubuntu virtual machine, Navigate to the **Resource Groups > Your Resource Group > Your Virtual Machine > Overview > Support + Troubleshooting > Serial Console**.
 
    ![](images/serialconsole.png)
 
-2.You can also use the power button to **restart** or **reset** the virtual machine.
+2. You can also use the power button to **restart** or **reset** the virtual machine.
 
-3.Click **Next** on the bottom right of this page to continue with the next lab exercise.
+3. Click **Next** on the bottom right of this page to continue with the next lab exercise.

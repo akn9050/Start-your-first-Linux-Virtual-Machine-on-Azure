@@ -5,16 +5,15 @@ In this exercise, you will login to the **Azure portal** using your lab Azure cr
 
 ### Login to the Azure Portal 
 
-1. Launch the Azure Portal(https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You would be asked to choose default browser configurations but you can skip those for now by clicking cancel. 
+1. Launch the Azure Portal(https://portal.azure.com) in the desktop on left side. You can use the shortcut on the desktop. You would be asked to choose default browser configurations but you can skip those for now by clicking **cancel**. 
 
    ![](images/azureportal.png)
 
-
-2. Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**.  Please use right click > **copy** to copy the username and paste inside the browser. You should allow **clipboard access** when asked by the browser. 
+2. Use **<inject key="AzureAdUserEmail"></inject>** as **Username** and click on **Next**.  Please use right click > **copy** to copy the username and paste inside the browser. Please allow **clipboard access** when asked by the browser. 
 
 3. In the next step, use **<inject key="AzureAdUserPassword"></inject>** as **Password**  and Click on **Sign In**
 
-4. On Stay signed in the pop-up window, click on **No**.
+4. On **Stay signed in** the pop-up window, click **No**.
 
    ![](images/fpage.png)
    
@@ -30,7 +29,7 @@ In this exercise, you will login to the **Azure portal** using your lab Azure cr
 
   ![](images/linux2.png)
 
-7. Please note that you do not have rights to create new resource groups in the lab environment. Please use the pre-created resource group named **linux-empty-UNIQUEID** for provisioning all resources during upcoming exercises.  
+7. Please note that you do not have rights to create new resource groups in the lab environment. Please use the pre-created resource group named **linux-empty-UNIQUEID** for provisioning all resources in upcoming exercises.  
 
 8. Click **Next** on the bottom right of this page.
 

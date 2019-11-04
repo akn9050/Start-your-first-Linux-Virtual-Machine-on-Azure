@@ -88,7 +88,7 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
     
 4. Type **yes** and hit enter when you're asked if you want to continue connecting to the virtual machine. 
 
-5.You are now connected to your linux virtual machine through SSH. 
+5. You are now connected to your linux virtual machine through SSH. 
     
 6. Run the following command to logout from your ubuntu virtual machine.
 

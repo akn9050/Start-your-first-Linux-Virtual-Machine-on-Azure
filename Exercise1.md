@@ -56,8 +56,7 @@ In this exercise, you will be creating an **Ubuntu** virtual machine using Azure
    
 7. It will take about 2 to 4 minutes for the VM to be deployed. Once deployed, you can review the Virtual machine details on the overview page. 
 
-   ![](images/overview.png)
-   
+   ![](images/overview.png)   
    
 8. You have now successfully created a **Ubuntu Virtual Machine** on Azure. 
 

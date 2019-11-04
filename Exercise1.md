@@ -13,7 +13,7 @@ In this exercise, We will be generating SSH Keys which will be used to authentic
 
 3. Select **Show advanced settings**. 
 
-  <kbd> ![](images/linux3.png) </kbd>
+   ![](images/linux3.png)
 
 4. In this step, you'll create a storage account for **Cloud Shell**.  Please provide a unique name for **Storage Account** and **File share**, select the **Cloud Shell region** as **East US** and then click on **Create Storage**. Please choose the existing resource group named **linux-empty-XXXX** by selecting **use existing** resource group button. 
 
@@ -67,8 +67,7 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
 
 1. Launch **Cloud Shell** if not running already and run following command to list down the VMs running in your lab environment.
 
-       az vm list -o table
-       
+       az vm list -o table       
    
    ![](images/linux4.png)
    
@@ -76,7 +75,7 @@ In this exercise, You'll be accessing the Ubuntu virtual machine deployed earlie
 
        az vm show -d -g linux-empty-XXXX -n <VM name>  --query publicIps -o tsv
 
-2. Run the following command to connect to your virtual machine remotely using SSH. 
+3. Run the following command to connect to your virtual machine remotely using SSH. 
 
    > x.x.x.x : Replace this with your virtual machine's **public IP address**
 
